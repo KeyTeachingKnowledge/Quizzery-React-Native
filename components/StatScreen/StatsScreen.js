@@ -1,18 +1,24 @@
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { useSelector, useDispatch } from 'react-redux';
+import { Colors } from '../../redux/slices/settings';
+import { ResetQuiz } from '../../redux/slices/quiz';
+import { SetAccuracy } from '../../redux/slices/stats';
 
-
-export default function StatsScreen({ colors, correctAnswers, selectedChoices, comingFromHome, resetQuiz, navigation }) {
-
+export default function StatsScreen({ correctAnswers, navigation }) {
+   const dispatch = useDispatch();
+   const colors = useSelector(Colors);
+   const comingFromHome = useSelector(state => state.settings.comingFromHome);
+   const resetQuiz = () => dispatch(ResetQuiz());
+   const selectedChoices = useSelector(state => state.quiz.selectedChoices);
    let correctAnswersTrimmed = correctAnswers.slice(0, selectedChoices.length);
    let differenceArray = correctAnswersTrimmed.map(function (answer, i) {
       return answer - selectedChoices[i];
    });
-   const [accuracy, setAccuracy] = useState('-');
+   const [accuracy, setAccuracy] = [ useSelector(state => state.stats.accuracy), (payload)=> dispatch(SetAccuracy(payload))];
    const [winningStreak, setWinningStreak] = useState('0');
    const [rank, setRank] = useState('-');
    useEffect(() => {
-
       if (selectedChoices.length > 0) {
          let acc = Math.ceil((differenceArray.filter(v => v === 0).length / selectedChoices.length) * 100)
          setAccuracy(acc);
@@ -73,7 +79,7 @@ export default function StatsScreen({ colors, correctAnswers, selectedChoices, c
             </Text>
             <Text style={[styles.settingText, { color: colors.light, fontSize: 50 }]} onPress={() => {
             }}>
-               {(accuracy != '-') ? accuracy + '.0%' : accuracy}
+              {(accuracy=='-.0%')?('-'):(accuracy)} 
             </Text>
          </View>
 
@@ -99,9 +105,7 @@ export default function StatsScreen({ colors, correctAnswers, selectedChoices, c
             </Text>
          </View>
 
-         {(!comingFromHome) ? (
-            <>
-               <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
+         <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
                   <TouchableOpacity>
                      <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => {
                         resetQuiz()
@@ -113,6 +117,9 @@ export default function StatsScreen({ colors, correctAnswers, selectedChoices, c
                      </Text>
                   </TouchableOpacity>
                </View>
+
+         {(!comingFromHome) ? (
+            <>
 
                <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
                   <TouchableOpacity>

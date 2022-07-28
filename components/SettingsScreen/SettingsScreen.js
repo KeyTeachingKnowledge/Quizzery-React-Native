@@ -1,8 +1,19 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-
-
-export default function SettingsScreen({ colors, colorIndex, setColorIndex, allColors, setAllColors, discoveryMode, setDiscoveryMode, lightColors, darkColors }) {
+import {darkColors, lightColors} from '../../assets/colors/colors';
+import { useDispatch, useSelector } from 'react-redux';
+import { SetColorIndex } from '../../redux/slices/settings';
+import { SetDiscoveryMode } from '../../redux/slices/settings';
+import { SetAllColors} from '../../redux/slices/settings';
+import { Colors } from '../../redux/slices/settings';
+export default function SettingsScreen() {
    const colorCodes = ["Navy", "Blue Sky", "Purple Monarchy", "Toffee", "Orangica", "Pink Princess", "Deep Eclipse", "Moon Silver", "Lavender", "Pitch Black", "Blue Sailor", "Lime"];
+   const dispatch = useDispatch();
+   const [colorIndex, setColorIndex] = [ useSelector(state => state.settings.colorIndex), (payload)=> dispatch(SetColorIndex(payload))];
+   const [discoveryMode, setDiscoveryMode] = [ useSelector(state => state.settings.discoveryMode), (payload)=> dispatch(SetDiscoveryMode(payload))];
+   const [allColors, setAllColors] = [ useSelector(state => state.settings.allColors), (payload)=> dispatch(SetAllColors(payload))];
+   const colors = useSelector(Colors)
+   const shownQuestion = useSelector(state => state.quiz.shownQuestion)
+
    return (
       <View style={[styles.container, {backgroundColor: colors.dark}]}>
          <View style={styles.logoContainer}>

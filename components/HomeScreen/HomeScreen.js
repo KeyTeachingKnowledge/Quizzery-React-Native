@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-
-export default function HomeScreen({ colors, navigation, setComingFromHome }) {
+import { Colors } from '../../redux/slices/settings';
+import { SetComingFromHome } from '../../redux/slices/settings';
+import { useSelector, useDispatch } from 'react-redux';
+export default function HomeScreen({ navigation }) {
    const quotesList = [
       "“The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”",
       "“Wisdom is not a product of schooling but of the lifelong attempt to acquire it.”",
@@ -17,14 +19,14 @@ export default function HomeScreen({ colors, navigation, setComingFromHome }) {
       "“Curiosity is the wick in the candle of learning.”"
    ]
    const authorList = ["Dr. Seuss", "Albert Einstein", "Frank Herbert", "Marvin Minsky", "E. M. Forster", "Henry Ford", "B.B. King", "Benjamin Franklin", "Leonardo da Vinci", "Howard Gardner", "Robert A. Heinlein", "William Arthur Ward"]
-
+   const dispatch = useDispatch();
    const [randomQuoteIndex, setRandomQuoteIndex] = useState(0);
-
-
+   const colors = useSelector(Colors)
+   const setComingFromHome = (payload) => dispatch(SetComingFromHome(payload))
    useEffect(() => {
       const interval = setInterval(() => {
          setRandomQuoteIndex(Math.floor(Math.random() * quotesList.length));
-      }, 6500);
+      }, 12500);
       return () => clearInterval(interval);
     }, []);
 
