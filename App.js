@@ -50,7 +50,7 @@ function App() {
 
 
 
-  const allColors = useSelector(state => state.settings.allColors)
+  const allColorsHelper = useSelector(state => state.settings.allColorsHelper)
 
   useEffect(() => { dispatch(RotateColor()) }, [shownQuestion]);
 
@@ -60,7 +60,7 @@ function App() {
 
   return (
     <>
-      <StatusBar style={(allColors == lightColors) ? "dark" : "light"} />
+      <StatusBar style={(allColorsHelper == 1) ? "dark" : "light"} />
       <NavigationContainer>
         <Stack.Navigator>
 
