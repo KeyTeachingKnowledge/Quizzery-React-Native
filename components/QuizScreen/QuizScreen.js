@@ -6,7 +6,7 @@ import InfoBar from './subcomponents/InfoBar';
 import Question from './subcomponents/Question';
 import Choices from './subcomponents/Choices';
 import  NavigationSection  from './subcomponents/NavigationSection';
-import Entries from '../../assets/data/QuizEntries';
+import Entries from '../../assets/data/QuizEntriesIdioms';
 import EvalPopUp from './subcomponents/EvalPopUp';
 
 

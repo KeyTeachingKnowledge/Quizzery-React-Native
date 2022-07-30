@@ -38,6 +38,9 @@ export default function HomeScreen({ navigation }) {
             <Text style={[styles.logo, { color: colors.light }]}>
                Quizzery
             </Text>
+            <Text style={[styles.logo, { color: colors.light, fontSize: 20, fontFamily: 'Poppins-Bold' }]}>
+               Idioms Edition
+            </Text>
          </View>
          <View style={styles.quotesContainer}>
             <Text style={[styles.quotesText, {color: colors.light}]}>
