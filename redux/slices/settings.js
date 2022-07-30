@@ -6,7 +6,8 @@ const initialState = {
    colorIndex: 0,
    discoveryMode: false,
    comingFromHome: true,
-   allColors: lightColors
+   allColors: lightColors,
+   allColorsHelper: 1
  }
  
  const reducers = {
@@ -23,6 +24,9 @@ const initialState = {
     SetAllColors(state, action) {
       state.allColors = action.payload
     },
+    SetAllColorsHelper(state, action) {
+      state.allColorsHelper = action.payload
+    },
     RotateColor(state) {
        if(state.discoveryMode){
          state.colorIndex = (state.colorIndex + 1) % state.allColors.length
@@ -38,6 +42,7 @@ export const { SetDiscoveryMode } = settingsSlice.actions
 export const { SetComingFromHome } = settingsSlice.actions
 export const { SetAllColors } = settingsSlice.actions
 export const { RotateColor } = settingsSlice.actions
+export const { SetAllColorsHelper } = settingsSlice.actions 
 export const Colors = (state) => state.settings.allColors[state.settings.colorIndex];
 
 export default settingsSlice.reducer
