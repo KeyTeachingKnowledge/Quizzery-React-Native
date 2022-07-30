@@ -20,7 +20,10 @@ npm start
 ```
 Use the given address (exp://...) in the Expo app on a real or emulated device to run the app while coding.
 
-### Quizzery: Idiom-edition is out! Find it <a href="https://mega.nz/file/NqpTWbgI#mFK7zRC2yITM96dw2BznFMgpKMdVb02WjCFLNn9cyQ0">here</a>.
+### Quizzery: Idiom-edition is out! Spruce up your English by getting 100% accuracy on the idioms' quiz. 
+
+Click <a href="https://mega.nz/file/NqpTWbgI#mFK7zRC2yITM96dw2BznFMgpKMdVb02WjCFLNn9cyQ0">here</a> to download.
+
 
 <h2 align='center'> Demo 🖥️ </h2>
 
