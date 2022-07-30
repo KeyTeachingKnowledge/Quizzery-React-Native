@@ -8,6 +8,7 @@ import { SetFinishFlag  } from '../../../redux/slices/quiz';
 import { IsTraversing } from '../../../redux/slices/quiz';
 import { Colors } from '../../../redux/slices/settings';
 import { SetComingFromHome } from '../../../redux/slices/settings';
+import { SetIsCorrect } from '../../../redux/slices/quiz';
 
 export default function NavigationSection({ navigation,  totalCount }) {
    const dispatch = useDispatch();
@@ -18,6 +19,7 @@ export default function NavigationSection({ navigation,  totalCount }) {
    const setSelectedChoice = (payload) => dispatch(SetSelectedChoice(payload));
    const setModalVisible = (payload) => dispatch(SetModalVisible(payload));
    const isCorrect = useSelector(state => state.quiz.isCorrect);
+   const setIsCorrect = (payload) => dispatch(SetIsCorrect(payload))
    const colors = useSelector(Colors)
    const setComingFromHome = (payload)=> dispatch(SetComingFromHome(payload))
    const handleSubmit = () => {
@@ -36,13 +38,16 @@ export default function NavigationSection({ navigation,  totalCount }) {
    }
 
    const handleNext = () => {
+      if(shownQuestion + 1 == currentQuestion)   setIsCorrect(-1)
       setShownQuestion((shownQuestion + 1) % totalCount);
+      
    }
 
    const handleBack = () => {
       if (shownQuestion > 0 && shownQuestion < totalCount) {
          setShownQuestion((shownQuestion - 1) % totalCount);
          setSelectedChoice(-1);
+         setIsCorrect(-1)
       }
    }
 

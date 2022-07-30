@@ -6,8 +6,8 @@ import HomeScreen from './components/HomeScreen/HomeScreen';
 import QuizScreen from './components/QuizScreen/QuizScreen';
 import StatsScreen from './components/StatScreen/StatsScreen';
 import SettingsScreen from './components/SettingsScreen/SettingsScreen';
-import { darkColors, lightColors } from './assets/colors/colors';
-import Entries from './assets/data/QuizEntries';
+import { lightColors } from './assets/colors/colors';
+import Entries from './assets/data/QuizEntriesIdioms';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -50,7 +50,7 @@ function App() {
 
 
 
-  const allColors = useSelector(state => state.settings.allColors)
+  const allColorsHelper = useSelector(state => state.settings.allColorsHelper)
 
   useEffect(() => { dispatch(RotateColor()) }, [shownQuestion]);
 
@@ -60,7 +60,7 @@ function App() {
 
   return (
     <>
-      <StatusBar style={(allColors == lightColors) ? "dark" : "light"} />
+      <StatusBar style={(allColorsHelper == 1) ? "dark" : "light"} />
       <NavigationContainer>
         <Stack.Navigator>
 

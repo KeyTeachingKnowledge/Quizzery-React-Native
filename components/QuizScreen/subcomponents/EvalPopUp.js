@@ -42,7 +42,7 @@ const EvalPopUp = ({ explanation, referTo, totalCount, correctAnswers}) => {
                 {(isTraversing)?
                 <>
                  <Text style={[styles.modalText, {color: colors.dark,}]}>
-                 <Text style={{ fontFamily: 'Poppins-Bold' }}>Justification:{"\n"} </Text>
+                 <Text style={{ fontFamily: 'Poppins-Bold' }}>Explanation:{"\n"} </Text>
                  <Text>{explanation}</Text>
                </Text>
                {(referTo)?
@@ -63,7 +63,7 @@ const EvalPopUp = ({ explanation, referTo, totalCount, correctAnswers}) => {
               <Text style={[styles.modalText, {color: colors.dark}, { fontFamily: 'Poppins-Bold', fontSize: 19 }]}>{(!isTraversing)?"That isn't correct!":"That wasn't correct!"}</Text>
               <Text style={{ color: colors.dark, fontFamily: 'Poppins-Regular', fontSize: 17 }}><Text style={{ fontFamily: 'Poppins-Bold', fontSize: 17 }}>{letters[correctAnswers[shownQuestion] - 1]}</Text> is the correct answer.</Text>
               <Text style={[styles.modalText, {color: colors.dark}]}>
-                <Text style={{ fontFamily: 'Poppins-Bold' }}>Justification:{"\n"} </Text>
+                <Text style={{ fontFamily: 'Poppins-Bold' }}>Explanation:{"\n"} </Text>
                 <Text>{explanation}</Text>
               </Text>
               {(referTo)?

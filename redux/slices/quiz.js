@@ -37,7 +37,7 @@ const initialState = {
     ResetQuiz(state){
       state.currentQuestion = 0;
       state.shownQuestion = 0;
-      state.isCorrect = 0;
+      state.isCorrect = -1;
       state.selectedChoice = -1;
       state.selectedChoices = [];
       state.finishFlag = false;

@@ -27,6 +27,7 @@ export default function HomeScreen({ navigation }) {
       const interval = setInterval(() => {
          setRandomQuoteIndex(Math.floor(Math.random() * quotesList.length));
       }, 12500);
+      
       return () => clearInterval(interval);
     }, []);
 
@@ -38,6 +39,9 @@ export default function HomeScreen({ navigation }) {
             <Text style={[styles.logo, { color: colors.light }]}>
                Quizzery
             </Text>
+            <Text style={[styles.logo, { color: colors.light, fontSize: 20, fontFamily: 'Poppins-Bold' }]}>
+               Idioms Edition
+            </Text>
          </View>
          <View style={styles.quotesContainer}>
             <Text style={[styles.quotesText, {color: colors.light}]}>
@@ -45,7 +49,6 @@ export default function HomeScreen({ navigation }) {
                {"\n"}
                —{authorList[randomQuoteIndex]}
               
-
             </Text>
          </View>
          <View style={[styles.playContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>

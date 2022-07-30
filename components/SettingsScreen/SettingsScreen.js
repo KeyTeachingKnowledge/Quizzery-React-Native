@@ -4,15 +4,19 @@ import { useDispatch, useSelector } from 'react-redux';
 import { SetColorIndex } from '../../redux/slices/settings';
 import { SetDiscoveryMode } from '../../redux/slices/settings';
 import { SetAllColors} from '../../redux/slices/settings';
+import { SetAllColorsHelper } from '../../redux/slices/settings';
 import { Colors } from '../../redux/slices/settings';
+import { useEffect } from 'react';
 export default function SettingsScreen() {
+   const colors = useSelector(Colors)
    const colorCodes = ["Navy", "Blue Sky", "Purple Monarchy", "Toffee", "Orangica", "Pink Princess", "Deep Eclipse", "Moon Silver", "Lavender", "Pitch Black", "Blue Sailor", "Lime"];
    const dispatch = useDispatch();
    const [colorIndex, setColorIndex] = [ useSelector(state => state.settings.colorIndex), (payload)=> dispatch(SetColorIndex(payload))];
    const [discoveryMode, setDiscoveryMode] = [ useSelector(state => state.settings.discoveryMode), (payload)=> dispatch(SetDiscoveryMode(payload))];
    const [allColors, setAllColors] = [ useSelector(state => state.settings.allColors), (payload)=> dispatch(SetAllColors(payload))];
-   const colors = useSelector(Colors)
+   const [allColorsHelper, setAllColorsHelper] = [useSelector(state => state.settings.allColorsHelper), (payload)=>dispatch(SetAllColorsHelper(payload))]
    const shownQuestion = useSelector(state => state.quiz.shownQuestion)
+
 
    return (
       <View style={[styles.container, {backgroundColor: colors.dark}]}>
@@ -21,13 +25,20 @@ export default function SettingsScreen() {
                Settings
             </Text>
          </View>
-
          <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
             <TouchableOpacity>
                <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
-                  (allColors===lightColors) ? setAllColors(darkColors) : setAllColors(lightColors);
+                  if(allColorsHelper == 1){
+                     setAllColors(darkColors)
+                     setAllColorsHelper(0)
+                  }
+                  else {
+                     setAllColors(lightColors)
+                     setAllColorsHelper(1)
+                  }
+                  
                }}>
-                  Theme: {(allColors==lightColors) ? "Light" : "Dark"}
+                  Theme: {(allColorsHelper === 1) ? "Light" : "Dark"}
                </Text>
             </TouchableOpacity>
          </View>
