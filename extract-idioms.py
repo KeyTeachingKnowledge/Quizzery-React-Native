@@ -15,7 +15,8 @@ idioms = [ idiom[2:] for idiom in idioms]
 questions = [question[3:] for question in questions]
 explanations = [ (idiom+': '+explanation) for idiom, explanation in zip(idioms, explanations)]
 
-
+for i, question in enumerate(questions):
+    print(f'{i} - {question} \n')
 Entries = []
 
 
@@ -44,7 +45,9 @@ class Entry(object):
          letters[correctLetter] = answer
          for (i, letter) in enumerate(letters):
             if i != correctLetter:
-               letters[i] = random.choice(allAnswers)
+               letters[i] = letters[correctLetter]
+               while letters[i] == letters[correctLetter]:
+                  letters[i] = random.choice(allAnswers)
          self.A0 = letters[0]
          self.A1 = letters[1]
          self.A2 = letters[2]
@@ -64,7 +67,7 @@ for i in range(len(idioms)):
 Entries = [str(entry.toJSON()) for entry in Entries]
 
 
-print(*Entries, sep='\n')
+#print(*Entries, sep='\n')
 
 with open('entries.txt', 'w') as f:
     for line in Entries:

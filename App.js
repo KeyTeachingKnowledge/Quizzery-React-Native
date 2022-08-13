@@ -17,7 +17,7 @@ import { persistor } from './redux/store';
 import { useSelector, useDispatch } from 'react-redux';
 import { RotateColor } from './redux/slices/settings'
 import { PersistGate } from 'redux-persist/integration/react'
-
+import { SetNewQuiz } from './redux/slices/quiz';
 
 const Stack = createStackNavigator();
 
@@ -41,18 +41,31 @@ function App() {
     'Poppins-ExtraBoldItalic': require('./assets/fonts/Poppins-ExtraBoldItalic.ttf'),
     'Poppins-ExtraBold': require('./assets/fonts/Poppins-ExtraBold.ttf'),
   });
+  const dispatch = useDispatch();
+
+  const newQuiz = useSelector(state => state.quiz.newQuiz);
+  useEffect(() => {
+    if (newQuiz) {
+      dispatch(SetNewQuiz(false));
+      for (var i = Entries.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [Entries[i], Entries[j]] = [Entries[j], Entries[i]];
+    }
+    }
+  },[newQuiz]);
 
   const totalCount = Entries.length;
 
-  const dispatch = useDispatch();
   const shownQuestion = useSelector(state => state.quiz.shownQuestion)
+
   const correctAnswers = Entries.map(({ correct }) => correct)
 
 
 
   const allColorsHelper = useSelector(state => state.settings.allColorsHelper)
 
-  useEffect(() => { dispatch(RotateColor()) }, [shownQuestion]);
+  useEffect(() => { 
+    dispatch(RotateColor()) }, [shownQuestion]);
 
   if (!fontsLoaded) {
     return <Progress.CircleSnail color={['red', 'green', 'blue']} />
