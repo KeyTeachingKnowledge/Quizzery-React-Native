@@ -18,7 +18,10 @@ then follow up with
 ```
 npm start
 ```
-Use the given address (exp://...) in the Expo app on a real or emulated device to run the app while coding.
+then with an Android simulator active
+```
+Press a
+```
 
 ### Quizzery: Idiom-edition is out! Spruce up your English by getting 100% accuracy on the 200 idioms' quiz. 
 
