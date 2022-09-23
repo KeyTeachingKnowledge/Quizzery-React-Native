@@ -23,7 +23,7 @@ then with an Android simulator active
 Press a
 ```
 
-If you would like to try the app <a href="">download here</a> for Android. If you are on iOS or desktop then <a href="quizzery.github.io">click here</a>.
+If you would like to try the app <a href="">download here</a> for Android. If you are on iOS or desktop then <a href="[https://quizzery.github.io/">click here</a>.
 
 
 <h2 align='center'> Demo 🖥️ </h2>
