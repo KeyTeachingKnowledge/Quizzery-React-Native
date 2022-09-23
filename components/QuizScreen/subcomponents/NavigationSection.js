@@ -30,10 +30,9 @@ export default function NavigationSection({ navigation,  totalCount }) {
       if (isCorrect != -1 && !finishFlag) {
          setModalVisible(true);
       }
-      if(currentQuestion == totalCount-1){
+      if(currentQuestion == totalCount -1 && isCorrect != -1){
          setFinishFlag(true);
       }
-     
       
    }
 
@@ -58,12 +57,12 @@ export default function NavigationSection({ navigation,  totalCount }) {
 
 
    return (
-      <View style={styles.navigationSection}>
+      <View style={styles.container}>
          <View style={[styles.submitContainer, { backgroundColor: colors.light, borderColor: colors.border }, (isCorrect == -1 && !isTraversing) ? { backgroundColor: colors.dark } : { backgroundColor: colors.light }]}>
             <TouchableOpacity style={[styles.submit]} onPress={() => (!isTraversing || ((currentQuestion == totalCount) && (shownQuestion == totalCount - 1))) ? handleSubmit():handleNext() }>
                {(!isTraversing || ((currentQuestion == totalCount) && (shownQuestion == totalCount - 1))) ?
                   (
-                     <Text style={[styles.submitText, { color: colors.dark, }, (isCorrect == -1) && { color: colors.light }]} >
+                     <Text style={[styles.submitText,   { color: colors.dark, }, ((isCorrect == -1) && !finishFlag) && { color: colors.light }]} >
                         {( finishFlag ) ? 'See Results' : 'Submit'}
                      </Text>
                   )
@@ -93,15 +92,17 @@ const styles = StyleSheet.create({
    container: {
       flex: 1,
       alignItems: 'center',
+      width: '93%'
    },
 
    submitContainer: {
-      width: '90%',
+      maxwidth: '100%',
+      minWidth: '100%',
       borderWidth: 2,
       marginHorizontal: 20,
       borderRadius: 10,
       padding: 10,
-      marginVertical: 10
+      marginVertical: 10,
    },
    submitText: {
       fontFamily: 'Poppins-Bold',

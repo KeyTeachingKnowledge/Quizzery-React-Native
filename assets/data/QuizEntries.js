@@ -1,115 +1,59 @@
-const E1 = {
-   Q: "Change the speech of the following sentence: 'If you don't keep quiet I will shoot you'",
-   A0: "He warned her to shoot if she didn't keep quiet calmly.",
-   A1: "He said calmly that I shall shoot you if you don't be quiet.",
-   A2: "He warned her calmly that he would shoot her if she didn't keep quiet.",
-   A3: "Calmly he warned her that be quiet or else he will have to shoot her.",
-   correct: '1',
-   explanation: "He said calmly that I shall shoot you if you don't be quiet.",
-   referTo: "Lesson 11, Section 5"
- };
 
- const E2 = {
-   Q: "Casablanca means 'White House' in Spanish. What was the city's name before it was named Casablanca?'",
-   A0: "Paris",
-   A1: "London",
-   A2: "Madrid",
-   A3: "Agna",
-   correct: '4',
-   explanation: "Agna was called Paris before it was named Casablanca.",
-   referTo: "Lesson 1, Section 2"
- };
+ export default  [
+  {
+    Q: "Which of the following is an idiom you'd say say after making a wrong decision?'",
+    A0: "I shot myself in the foot by...",
+    A1: "I'm behind schedule",
+    A2: "It fell short of my expectations",
+    A3: "It went over my head",
+    correct: '1',
+    explanation: "Shooting yourself in the foot would really hurt!",
+    referTo: "Lesson 11 on Idioms"
+  },
 
- const E3 = {
-  Q: "What two nations colonized Morocco in the early 20th century?'",
-  A0: "England and France",
-  A1: "England and Spain",
-  A2: "France and Spain",
-  A3: "France and England",
-  correct: '3',
-  explanation: "Spain conquered the territory known as Western Sahara, along with the Rif Mountains in the north and the area around Tangiers. France ruled over the rest. Tangier was an international zone, and was ruled by a group of European ambassadors.",
-  referTo: "Lesson 119 Section 5"
-};
+  {
+    Q: "Which of the following is an idiom you'd say when the situation is hopeless?",
+    A0: "Let's pull an all-nigher",
+    A1: "This isn't going to work. We're shuffling  deck chairs on the Titanic",
+    A2: "The professor likes to go off on tangents",
+    A3: "Time to get the ball rolling!",
+    correct: '2',
+    explanation: "Shuffling deck chairs on the Titanic is a metaphor for doing something useless",
 
-const E4 = {
-  Q: "Change the speech of the following sentence: 'If you don't keep quiet I will shoot you'",
-  A0: "He warned her to shoot if she didn't keep quiet calmly.",
-  A1: "He said calmly that I shall shoot you if you don't be quiet.",
-  A2: "He warned her calmly that he would shoot her if she didn't keep quiet.",
-  A3: "Calmly he warned her that be quiet or else he will have to shoot her.",
-  correct: '1',
-  explanation: "He said calmly that I shall shoot you if you don't be quiet.",
-  referTo: "Lesson 11, Section 5"
-};
-
-const E5 = {
-  Q: "The deepest place on Earth is ......... in the Pacific Ocean.",
-  A0: "The Mariana Trench",
-  A1: "1/Mount Everest",
-  A2: "El Capitan Volcano",
-  A3: "Waterfall of the Amazon",
-  correct: '1',
-  explanation: "The deepest place on Earth is the Mariana Trench in the Pacific Ocean. It’s 36,201 feet (11,034m) deep.",
-  referTo: ""
-};
-
-const E6 = {
-  Q: "The longest river in the world is the River Nile, which is .......... length.",
-  A0: "6,855km",
-  A1: "8,853km",
-  A2: "6,853km",
-  A3: "9,153km",
-  correct: '3',
-  explanation: "The longest river in the world is the River Nile, clocking 6,853km in length. Its water resources are shared by 11 different countries, too.",
-  referTo: ""
-};
+  },
 
 
-const E7 = {
-  Q: ".......... trees in Africa communicate with each other.",
-  A0: "Pine",
-  A1: "Acacia",
-  A2: "Christmas",
-  A3: "Armadillo",
-  correct: '2',
-  explanation: "Acacia trees in Africa communicate with each other. They emit gasses to alert other trees to produce the toxin tannin, which protects them from hungry animals.",
-  referTo: ""
-};
-
-const E8 = {
-  Q: "The first person to walk on the moon was ..........",
-  A0: "Neil Armstrong",
-  A1: "Buzz Aldrin",
-  A2: "John Glenn",
-  A3: "Michael Collins",
-  correct: '1',
-  explanation: "Neil Armstrong was the first person to walk on the moon. He was the first to step on the moon’s surface and land on the moon’s surface.",
-  referTo: ""
-}
-
-const E9 = {
-  Q: "Each limestone/granite block that makes up the Great Pyramid of Giza weighs ......... tons.",
-  A0: "0.2",
-  A1: "3.0",
-  A2: "20.5",
-  A3: "2.5",
-  correct: '4',
-  explanation: 'Each limestone/granite block that makes up the Great Pyramid of Giza weighs 2.5 tons. And there are 2.3 million of them.',
-  referTo: ""
-}
-
-const E10 = {
-  Q: "It would take you approximately 18 months to walk all the way along ..........",
-  A0: "the Great Wall of China",
-  A1: "the Great Pyramid of Giza",
-  A2: "the roller coaster",
-  A3: "the Great Lakes of the world",
-  correct: '1', 
-  explanation: "It would take you approximately 18 months to walk all the way along The Great Wall of China. (It’s over 5,000 miles long).",
-  referTo: ""
-}
+  {
+    Q: "Which of the following is an idiom you'd if there is something you plan on getting back to later but soon?",
+    A0: "It's on the back burner",
+    A1: "It's a piece of cake",
+    A2: "It's a randezvous problem",
+    A3: "It's on the agenda",
+    correct: '4',
+    explanation: "If something is on the agenda, then it will be considered in the future",
+  },
 
 
- const Entries = [E1, E2, E3, E4, E5, E6, E7, E8, E9, E10];
+  {
+    Q: "Which of the following is not an idiom you would say when faced with (hard) decisions?",
+    A0: "I'm at a crossroads",
+    A1: "I'm caught between a rock and a hard place",
+    A2: "I'm caught between the devil and the deep blue sea",
+    A3: "I passed with flying colors",
+    correct: '4',
+    explanation: "The first three are all idioms that mean you have to make a choice (difficult choice for the last two)",
 
- export default Entries;
+  },
+
+  {
+    Q: "Which of the following is not an idiom you would say when comparing two things X and Y?",
+    A0: "X pales in comparison to Y",
+    A1: "X is skating on thin ice with Y",
+    A2: "X has an edge over Y",
+    A3: "X doesn't stack up well against Y",
+    correct: '2',
+    explanation: "To be skating on thin ice means to be in a dangerous situation. Y is irrelevant in that case, unlike the three other options",
+
+  },
+
+ ]

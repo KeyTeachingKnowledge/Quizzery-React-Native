@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default Entries = [];","map":{"version":3,"names":["Entries"],"sources":["/Users/essam/Documents/GitHub/Quizzery-React-Native/assets/data/QuizEntries.js"],"sourcesContent":["\n export default Entries = [\n\n\n\n\n ]"],"mappings":"AACC,eAAeA,OAAO,GAAG,EAAzB"},"metadata":{},"sourceType":"module"}

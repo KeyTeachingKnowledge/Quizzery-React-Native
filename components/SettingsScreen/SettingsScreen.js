@@ -6,7 +6,8 @@ import { SetDiscoveryMode } from '../../redux/slices/settings';
 import { SetAllColors} from '../../redux/slices/settings';
 import { SetAllColorsHelper } from '../../redux/slices/settings';
 import { Colors } from '../../redux/slices/settings';
-import { useEffect } from 'react';
+import { Platform } from 'react-native';
+
 export default function SettingsScreen() {
    const colors = useSelector(Colors)
    const colorCodes = ["Navy", "Blue Sky", "Purple Monarchy", "Toffee", "Orangica", "Pink Princess", "Deep Eclipse", "Moon Silver", "Lavender", "Pitch Black", "Blue Sailor", "Lime"];
@@ -20,11 +21,11 @@ export default function SettingsScreen() {
 
    return (
       <View style={[styles.container, {backgroundColor: colors.dark}]}>
-         <View style={styles.logoContainer}>
+         {(Platform.OS !== 'web')&&<View style={styles.logoContainer}>
             <Text style={[styles.logo, { color: colors.light }]}>
                Settings
             </Text>
-         </View>
+         </View>}
          <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
             <TouchableOpacity>
                <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 

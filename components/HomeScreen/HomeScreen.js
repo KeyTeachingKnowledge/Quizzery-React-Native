@@ -76,6 +76,13 @@ export default function HomeScreen({ navigation }) {
                </Text>
             </TouchableOpacity>
          </View>
+         <View style={[styles.playContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
+            <TouchableOpacity>
+               <Text style={[styles.playText, { color: colors.dark, }]} onPress={()=> navigation.navigate('AboutScreen')}>
+                  About
+               </Text>
+            </TouchableOpacity>
+         </View>
 
       </View>
    )

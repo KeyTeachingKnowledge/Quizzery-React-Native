@@ -33,7 +33,7 @@ export default function Choices({A0, A1, A2, A3, correct,  correctAnswers }) {
        ((choice == correctAnswers[shownQuestion])? traverseStyleCorrect: traverseStyleIncorrect))]);}
 
    return (
-      <ScrollView style={styles.answersContainer}>
+      <ScrollView style={[styles.answersContainer]} >
       <Pressable style={answerStyles(1, [styles.answer, { borderColor: colors.border, }], [styles.selectedAnswer, { backgroundColor: colors.light,}], styles.selectedAnswerCorrect, styles.selectedAnswerIncorrect)} onPressIn={()=>setChoiceHandler(1)}>
         <View><Text style={answerStyles(1, [styles.letter, { color: colors.light}], [[styles.selectedLetter, { color: colors.dark,}], { color: colors.dark}], [styles.selectedLetterCorrection, { color: 'white'}], [styles.selectedLetterCorrection, { color: 'white'}])}>A</Text></View>
         <Text style={answerStyles(1, [styles.answerText, {color: colors.light,}], [styles.selectedAnswerText, { color: colors.dark,}], [styles.selectedAnswerTextCorrection, { color: 'white',}], [styles.selectedAnswerTextCorrection, { color: 'white',}])}>
@@ -66,9 +66,8 @@ export default function Choices({A0, A1, A2, A3, correct,  correctAnswers }) {
 const styles = StyleSheet.create({
 
    answersContainer: {
-     marginHorizontal: 20,
-     maxWidth: '90%',
-     minWidth: '90%',
+     maxWidth: '93%',
+     minWidth: '93%',
    },
 
     letter: {
@@ -83,8 +82,8 @@ const styles = StyleSheet.create({
     },
   
    answer: {
-     maxwidth: '30%',
-     minWidth: '30%',
+     maxwidth: '100%',
+     minWidth: '100%',
      paddingVertical: 10,
      marginVertical: 10,
      backgroundColor: 'rgba(0,0,0,0)',
@@ -101,10 +100,12 @@ const styles = StyleSheet.create({
       
   },
    selectedAnswerCorrect: {
-      backgroundColor: '#32c953',   // green
+      backgroundColor: '#32c953',   
+      borderColor: '#029943',
    },
     selectedAnswerIncorrect: {
-      backgroundColor: '#c93232',   // red
+      backgroundColor: '#c93232',  
+      borderColor: '#993232',
     },
    answerText: {
     paddingHorizontal: 25,

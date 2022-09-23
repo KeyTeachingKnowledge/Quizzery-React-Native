@@ -20,8 +20,6 @@ for i, question in enumerate(questions):
 Entries = []
 
 
-
-
 import random
 import json
 
