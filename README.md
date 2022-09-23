@@ -23,9 +23,8 @@ then with an Android simulator active
 Press a
 ```
 
-### Quizzery: Idiom-edition is out! Spruce up your English by getting 100% accuracy on the 200 idioms' quiz. 
 
-Click <a href="https://expo.dev/artifacts/3ae3a8f1-b10f-4904-a34d-c38befa76e41">here</a> to download.
+Click <a href="">here</a> to download.
 
 
 <h2 align='center'> Demo 🖥️ </h2>
