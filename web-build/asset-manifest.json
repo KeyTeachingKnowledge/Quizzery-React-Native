@@ -1,0 +1,30 @@
+{
+  "files": {
+    "app.js": "/static/js/app.df040051.chunk.js",
+    "app.js.map": "/static/js/app.df040051.chunk.js.map",
+    "runtime~app.js": "/static/js/runtime~app.27401809.js",
+    "runtime~app.js.map": "/static/js/runtime~app.27401809.js.map",
+    "static/js/2.fb97a756.chunk.js": "/static/js/2.fb97a756.chunk.js",
+    "static/js/2.fb97a756.chunk.js.map": "/static/js/2.fb97a756.chunk.js.map",
+    "fonts/Poppins-Bold.ttf": "/./fonts/Poppins-Bold.ttf",
+    "fonts/Poppins-ExtraBold.ttf": "/./fonts/Poppins-ExtraBold.ttf",
+    "fonts/Poppins-ExtraBoldItalic.ttf": "/./fonts/Poppins-ExtraBoldItalic.ttf",
+    "fonts/Poppins-Italic.ttf": "/./fonts/Poppins-Italic.ttf",
+    "fonts/Poppins-Light.ttf": "/./fonts/Poppins-Light.ttf",
+    "fonts/Poppins-Regular.ttf": "/./fonts/Poppins-Regular.ttf",
+    "favicon-16.png": "/favicon-16.png",
+    "favicon-32.png": "/favicon-32.png",
+    "favicon.ico": "/favicon.ico",
+    "index.html": "/index.html",
+    "manifest.json": "/manifest.json",
+    "serve.json": "/serve.json",
+    "static/js/2.fb97a756.chunk.js.LICENSE.txt": "/static/js/2.fb97a756.chunk.js.LICENSE.txt",
+    "static/media/check-icon.png": "/static/media/check-icon.6f6371b0.png",
+    "static/media/cross-icon.png": "/static/media/cross-icon.c96b3d1c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.27401809.js",
+    "static/js/2.fb97a756.chunk.js",
+    "static/js/app.df040051.chunk.js"
+  ]
+}

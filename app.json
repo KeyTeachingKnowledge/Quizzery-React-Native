@@ -22,6 +22,7 @@
     },
     "android": {
       "package": "com.essamos.quizzery",
+      "permissions" : [],
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
