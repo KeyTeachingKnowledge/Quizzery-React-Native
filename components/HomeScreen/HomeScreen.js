@@ -40,7 +40,7 @@ export default function HomeScreen({ navigation }) {
                Quizzery
             </Text>
             <Text style={[styles.logo, { color: colors.light, fontSize: 20, fontFamily: 'Poppins-Bold' }]}>
-               Idioms Edition
+              Let's English Your Thinking!
             </Text>
          </View>
          <View style={styles.quotesContainer}>

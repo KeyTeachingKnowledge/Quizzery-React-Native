@@ -38,7 +38,7 @@ for i in range(0, len(df), 5):
     Entry.A1 = pre(df.iloc[i+2, 0])
     Entry.A2 = pre(df.iloc[i+3, 0])
     Entry.A3 = pre(df.iloc[i+4, 0])
-    Entry.correct = checkRight(df.iloc[i+1, 0], df.iloc[i+2, 0], df.iloc[i+3, 0], df.iloc[i+4, 0])
+    Entry.correct = checkRight(df.iloc[i+1, 0].lstrip(), df.iloc[i+2, 0].lstrip(), df.iloc[i+3, 0].lstrip(), df.iloc[i+4, 0].lstrip())
     Entry.explanation = ""
     Entry.referTo = ""
     QuizEntries.append(Entry)

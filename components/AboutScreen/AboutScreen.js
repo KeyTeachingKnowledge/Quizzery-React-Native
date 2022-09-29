@@ -23,7 +23,7 @@ export default function AboutScreen({ correctAnswers, navigation }) {
          <View style={[styles.settingContainer, { backgroundColor: colors.dark, borderColor: colors.light }]}>
             <Text style={[styles.settingText, { color: colors.light, }]} onPress={() => {
             }}>
-               Have fun learning! Thank you for using the app.
+               All Questions & Answers in the App are due to Dr. Youssef Bahmaad and his Dear Students.
             </Text>
 
          </View>

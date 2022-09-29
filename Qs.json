@@ -166,7 +166,7 @@
     "A2": "Self-correction",
     "A3": "Peer correction",
     "Q": "\u00a0A set of symbols teachers use to indicate errors in student writing is called:",
-    "correct": "1",
+    "correct": "2",
     "explanation": "",
     "referTo": ""
 },{
@@ -184,7 +184,7 @@
     "A2": "Deductive learning",
     "A3": "Active Learning",
     "Q": "\u00a0The approach where examples are given and the students derive the rule from practice is:",
-    "correct": "1",
+    "correct": "3",
     "explanation": "",
     "referTo": ""
 },{
@@ -202,7 +202,7 @@
     "A2": "Information gap",
     "A3": "Learning\u00a0",
     "Q": "\u00a0The process of absorbing language naturally and without conscious effort is named:",
-    "correct": "1",
+    "correct": "2",
     "explanation": "",
     "referTo": ""
 },{
@@ -220,7 +220,7 @@
     "A2": "Goals",
     "A3": " Notions",
     "Q": " The general concepts expressed through language are called",
-    "correct": "1",
+    "correct": "4",
     "explanation": "",
     "referTo": ""
 },{
@@ -238,7 +238,7 @@
     "A2": "Readability",
     "A3": "Intertextuality ",
     "Q": " The level of difficulty in a written passage is named",
-    "correct": "1",
+    "correct": "3",
     "explanation": "",
     "referTo": ""
 },{
@@ -247,7 +247,7 @@
     "A2": "Skill",
     "A3": "Strategy",
     "Q": " The effect or change that results from an instructional activity or program is named ",
-    "correct": "1",
+    "correct": "3",
     "explanation": "",
     "referTo": ""
 },{
@@ -292,7 +292,7 @@
     "A2": "Continuous evaluation",
     "A3": "Evaluation at the beginning of a course",
     "Q": "By which of the following methods the true evaluation of students is possible ",
-    "correct": "1",
+    "correct": "3",
     "explanation": "",
     "referTo": ""
 },{
@@ -301,7 +301,7 @@
     "A2": "Pin-drop silence",
     "A3": "Strict discipline",
     "Q": "The essence of an effective classroom environment is",
-    "correct": "1",
+    "correct": "2",
     "explanation": "",
     "referTo": ""
 },{
@@ -319,7 +319,7 @@
     "A2": "Listening and speaking",
     "A3": "Grammar and vocabulary",
     "Q": "Most audio-lingual materials are designed to help learners develop",
-    "correct": "1",
+    "correct": "3",
     "explanation": "",
     "referTo": ""
 },{
@@ -337,7 +337,7 @@
     "A2": "Grammar knowledge",
     "A3": "Learning",
     "Q": " According to \u201cschema theory\u201d, learners draw from their own \u2026to understand a reading text. ",
-    "correct": "1",
+    "correct": "2",
     "explanation": "",
     "referTo": ""
 },{
@@ -355,7 +355,7 @@
     "A2": "Skim",
     "A3": "Select",
     "Q": "When you teach students how to look for specific details in a text you are showing them how to ",
-    "correct": "1",
+    "correct": "2",
     "explanation": "",
     "referTo": ""
 },{
@@ -364,7 +364,7 @@
     "A2": "Slightly lower than they are capable of reading",
     "A3": "Similar to their native language level",
     "Q": "When choosing extensive reading materials for English language learners, the level should be ",
-    "correct": "1",
+    "correct": "2",
     "explanation": "",
     "referTo": ""
 },{
@@ -373,7 +373,7 @@
     "A2": "Writing your resume",
     "A3": "Writing a chain story",
     "Q": "Which of the following would be most suitable for an interactive writing activity ",
-    "correct": "1",
+    "correct": "4",
     "explanation": "",
     "referTo": ""
 },{
@@ -400,7 +400,7 @@
     "A2": "Providing private direction",
     "A3": "Criticizing misbehavior in public",
     "Q": "To have effective classroom discipline, the teacher must remember to incorporate all of these, except",
-    "correct": "1",
+    "correct": "4",
     "explanation": "",
     "referTo": ""
 },{
@@ -418,7 +418,7 @@
     "A2": "Spatial Intelligence",
     "A3": "Emotional intelligence",
     "Q": " If a person is able to communicate well with others, they may be thought of as having",
-    "correct": "1",
+    "correct": "2",
     "explanation": "",
     "referTo": ""
 },{
@@ -427,7 +427,7 @@
     "A2": "Examples of learners\u2019 work",
     "A3": "All of these",
     "Q": "Teaching portfolios should contain",
-    "correct": "1",
+    "correct": "4",
     "explanation": "",
     "referTo": ""
 },{
@@ -661,7 +661,7 @@
     "A2": "Grammar Translation method",
     "A3": "The Silent Way",
     "Q": "Using a metal pointer, the teacher points to a chart hanging on the blackboard. The chart contains different sounds of the English language and each category of sounds (vowels and consonants) is written in a different color. The teacher points to the first sound two times while everybody is silent. The third time the teacher points, he says /\u00e6/. The teacher does the same thing for all the other sounds before asking the students to repeat after him. He keeps repeating and demonstrating each sound until he is sure that the students know how to pronounce it. The teacher points to some objects in the classroom and the students say how they are pronounced.",
-    "correct": "1",
+    "correct": "4",
     "explanation": "",
     "referTo": ""
 },{
@@ -1543,7 +1543,7 @@
     "A2": "Exchanging details in an information gap activity about the weather",
     "A3": "completing a conversation about the weather appropriately",
     "Q": "Amal believes that because she's adopting the communicative approach in her teaching, she should also test learners' achievement in a commuicative way. To test learners' speaking abilities, Amal designed a veriety of tasks about the topic of \"weahter\". Which of the following is NOT consistent with Amal's philosophy in teaching language?",
-    "correct": "1",
+    "correct": "2",
     "explanation": "",
     "referTo": ""
 },{

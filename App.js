@@ -52,8 +52,8 @@ function App() {
     if (newQuiz) {
       dispatch(SetNewQuiz(false));
       for (var i = Entries.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [Entries[i], Entries[j]] = [Entries[j], Entries[i]];
+        //const j = Math.floor(Math.random() * (i + 1));
+        //[Entries[i], Entries[j]] = [Entries[j], Entries[i]];
     }
     }
   },[newQuiz]);
