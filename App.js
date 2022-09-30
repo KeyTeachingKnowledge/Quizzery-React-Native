@@ -7,7 +7,7 @@ import QuizScreen from './components/QuizScreen/QuizScreen';
 import StatsScreen from './components/StatScreen/StatsScreen';
 import SettingsScreen from './components/SettingsScreen/SettingsScreen';
 import AboutScreen from './components/AboutScreen/AboutScreen';
-import Entries from './assets/data/QuizEntries';
+import OrderedEntries from './assets/data/QuizEntries';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -48,22 +48,37 @@ function App() {
   const dispatch = useDispatch();
 
   const newQuiz = useSelector(state => state.quiz.newQuiz);
+  const randomize = useSelector(state => state.settings.randomize);
+  const audio = useSelector(state => state.settings.audio);
+  const [Entries, setEntries] = React.useState(OrderedEntries);
+
+
   useEffect(() => {
     if (newQuiz) {
       dispatch(SetNewQuiz(false));
-      for (var i = Entries.length - 1; i > 0; i--) {
-        //const j = Math.floor(Math.random() * (i + 1));
-        //[Entries[i], Entries[j]] = [Entries[j], Entries[i]];
+      if (randomize) {
+        console.log('here')
+        const shuffledEntries = shuffle(OrderedEntries);
+        console.log(shuffledEntries[0])
+        setEntries(shuffledEntries);
     }
+      else {
+        setEntries(OrderedEntries);
+      }
     }
   },[newQuiz]);
+
+  // whenever Entries changes, apply the change
+    
 
   const totalCount = Entries.length;
 
   const shownQuestion = useSelector(state => state.quiz.shownQuestion)
-
-  const correctAnswers = Entries.map(({ correct }) => correct)
-
+  const [correctAnswers, setCorrectAnswers] = React.useState(Entries.map(({ correct }) => correct));
+  // whenever Entries changes or correctAnswers changes, apply the change
+  useEffect(() => {
+    setCorrectAnswers(Entries.map(({ correct }) => correct));
+  }, [Entries]);
   const colors = useSelector(Colors)
 
 
@@ -103,7 +118,7 @@ function App() {
             }}
           >
             {(props) => <QuizScreen {...props} totalCount={totalCount} correctAnswers={correctAnswers}
-                          shownQuestion={shownQuestion} />}
+                          shownQuestion={shownQuestion} Entries={Entries} />}
           </Stack.Screen>
 
           <Stack.Screen name="StatsScreen" 
@@ -175,3 +190,19 @@ function App() {
 }
 
 export default AppWrapper;
+
+// From SO: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+const shuffle = (array) => {
+  let currentIndex = array.length;
+  let temporaryValue;
+  let randomIndex;
+  const newArray = array.slice();
+  while (currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = newArray[currentIndex];
+    newArray[currentIndex] = newArray[randomIndex];
+    newArray[randomIndex] = temporaryValue;
+  }
+  return newArray;
+};

@@ -7,6 +7,8 @@ import { SetAllColors} from '../../redux/slices/settings';
 import { SetAllColorsHelper } from '../../redux/slices/settings';
 import { Colors } from '../../redux/slices/settings';
 import { Platform } from 'react-native';
+import { SetRandomize } from '../../redux/slices/settings';
+import { SetAudio } from '../../redux/slices/settings';
 
 export default function SettingsScreen() {
    const colors = useSelector(Colors)
@@ -17,8 +19,8 @@ export default function SettingsScreen() {
    const [allColors, setAllColors] = [ useSelector(state => state.settings.allColors), (payload)=> dispatch(SetAllColors(payload))];
    const [allColorsHelper, setAllColorsHelper] = [useSelector(state => state.settings.allColorsHelper), (payload)=>dispatch(SetAllColorsHelper(payload))]
    const shownQuestion = useSelector(state => state.quiz.shownQuestion)
-
-
+   const [randomize, setRandomize] = [useSelector(state => state.settings.randomize), (payload)=>dispatch(SetRandomize(payload))]
+   const [audio, setAudio] = [useSelector(state => state.settings.audio), (payload)=>dispatch(SetAudio(payload))]
    return (
       <View style={[styles.container, {backgroundColor: colors.dark}]}>
          {(Platform.OS !== 'web')&&<View style={styles.logoContainer}>
@@ -50,6 +52,26 @@ export default function SettingsScreen() {
                   setDiscoveryMode(!discoveryMode);
                }}>
                   Discovery Mode: {(discoveryMode) ? "On" : "Off"}
+               </Text>
+            </TouchableOpacity>
+         </View>
+
+         <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
+            <TouchableOpacity>
+               <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
+                  setRandomize(!randomize);
+               }}>
+                  Randomize Upon Reset: {(randomize) ? "On" : "Off"}
+               </Text>
+            </TouchableOpacity>
+         </View>
+
+         <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
+            <TouchableOpacity>
+               <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
+                  setAudio(!audio);
+               }}>
+                  Audio: {(audio) ? "On" : "Off"}
                </Text>
             </TouchableOpacity>
          </View>

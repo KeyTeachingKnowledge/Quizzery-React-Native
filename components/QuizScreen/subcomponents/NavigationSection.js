@@ -9,6 +9,8 @@ import { IsTraversing } from '../../../redux/slices/quiz';
 import { Colors } from '../../../redux/slices/settings';
 import { SetComingFromHome } from '../../../redux/slices/settings';
 import { SetIsCorrect } from '../../../redux/slices/quiz';
+import { Audio } from 'expo-av';
+
 
 export default function NavigationSection({ navigation,  totalCount }) {
    const dispatch = useDispatch();
@@ -22,12 +24,17 @@ export default function NavigationSection({ navigation,  totalCount }) {
    const setIsCorrect = (payload) => dispatch(SetIsCorrect(payload))
    const colors = useSelector(Colors)
    const setComingFromHome = (payload)=> dispatch(SetComingFromHome(payload))
+   const audio = useSelector(state => state.settings.audio)
    const handleSubmit = () => {
       if(finishFlag){
          navigation.navigate('StatsScreen')
          setComingFromHome(false)
       }
       if (isCorrect != -1 && !finishFlag) {
+         if (audio) {
+         if (isCorrect == 1)  playSoundCorrect()
+         else playSoundIncorrect()
+         }
          setModalVisible(true);
       }
       if(currentQuestion == totalCount -1 && isCorrect != -1){
@@ -54,6 +61,31 @@ export default function NavigationSection({ navigation,  totalCount }) {
       if(currentQuestion===totalCount-1){
          setFinishFlag(true);
       }},[]);
+
+
+      // For Audio
+      const [sound, setSound] = useState();
+
+      async function playSoundCorrect() {
+        const { sound } = await Audio.Sound.createAsync(require('../../../assets/audio/correct.wav'));
+        setSound(sound);
+      
+        await sound.playAsync();
+      }
+      
+      async function playSoundIncorrect() {
+         const { sound } = await Audio.Sound.createAsync(require('../../../assets/audio/incorrect.wav'));
+         setSound(sound);
+          await sound.playAsync();
+       }
+      
+      useEffect(() => {
+        return sound
+          ? () => {
+              sound.unloadAsync();
+            }
+          : undefined;
+      }, [sound]);
 
 
    return (
@@ -110,4 +142,6 @@ const styles = StyleSheet.create({
       textAlign: 'center'
    }
 });
+
+
 

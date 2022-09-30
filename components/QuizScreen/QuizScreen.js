@@ -5,11 +5,10 @@ import InfoBar from './subcomponents/InfoBar';
 import Question from './subcomponents/Question';
 import Choices from './subcomponents/Choices';
 import  NavigationSection  from './subcomponents/NavigationSection';
-import Entries from '../../assets/data/QuizEntries';
 import EvalPopUp from './subcomponents/EvalPopUp';
 
 
-const QuizScreen = ({totalCount, correctAnswers, navigation, shownQuestion}) => {
+const QuizScreen = ({totalCount, correctAnswers, navigation, shownQuestion, Entries}) => {
   const colors = useSelector(Colors)
   return (
       <View style={[styles.container, { backgroundColor: colors.dark }]}>
