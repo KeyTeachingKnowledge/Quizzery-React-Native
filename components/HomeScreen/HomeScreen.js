@@ -37,20 +37,20 @@ export default function HomeScreen({ navigation }) {
       <View style={[styles.container, {backgroundColor: colors.dark}]}>
          <View style={styles.logoContainer}>
             <Text style={[styles.logo, { color: colors.light }]}>
-               Quizzery
+               KTK
             </Text>
             <Text style={[styles.logo, { color: colors.light, fontSize: 20, fontFamily: 'Poppins-Bold' }]}>
-              Let's English Your Thinking!
+              Key Teaching Knowledge
             </Text>
          </View>
-         <View style={styles.quotesContainer}>
+         {<View style={styles.quotesContainer}>
             <Text style={[styles.quotesText, {color: colors.light}]}>
-               {quotesList[randomQuoteIndex]}
+               {/* {quotesList[randomQuoteIndex]}
                {"\n"}
-               —{authorList[randomQuoteIndex]}
-              
+               —{authorList[randomQuoteIndex]} */}
+              Some English Learners are Destined to be English Teachers
             </Text>
-         </View>
+         </View>}
          <View style={[styles.playContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
             <TouchableOpacity>
                <Text style={[styles.playText, { color: colors.dark, }]} onPress={
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
 
    logo: {
       fontSize: 70,
-      fontFamily: 'Poppins-ExtraBoldItalic',
+      fontFamily: 'Poppins-ExtraBold',
       textAlign: 'center',
    },
    logoContainer: {
@@ -107,9 +107,9 @@ const styles = StyleSheet.create({
    },
    quotesContainer: {
       marginHorizontal: 30,
-      marginBottom: 20,
-      maxHeight: 110,
-      minHeight: 110
+      marginBottom: 0,
+      maxHeight: 60,
+      minHeight: 60
    },
    quotesText: {
       fontSize: 15,

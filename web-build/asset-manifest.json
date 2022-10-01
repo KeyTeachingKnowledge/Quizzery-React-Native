@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/static/js/app.181870a6.chunk.js",
-    "app.js.map": "/static/js/app.181870a6.chunk.js.map",
+    "app.js": "/static/js/app.8df8b171.chunk.js",
+    "app.js.map": "/static/js/app.8df8b171.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.27401809.js",
     "runtime~app.js.map": "/static/js/runtime~app.27401809.js.map",
-    "static/js/2.cb12c6a7.chunk.js": "/static/js/2.cb12c6a7.chunk.js",
-    "static/js/2.cb12c6a7.chunk.js.map": "/static/js/2.cb12c6a7.chunk.js.map",
+    "static/js/2.d57919d7.chunk.js": "/static/js/2.d57919d7.chunk.js",
+    "static/js/2.d57919d7.chunk.js.map": "/static/js/2.d57919d7.chunk.js.map",
     "fonts/Poppins-Bold.ttf": "/./fonts/Poppins-Bold.ttf",
     "fonts/Poppins-ExtraBold.ttf": "/./fonts/Poppins-ExtraBold.ttf",
     "fonts/Poppins-ExtraBoldItalic.ttf": "/./fonts/Poppins-ExtraBoldItalic.ttf",
@@ -18,7 +18,7 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/js/2.cb12c6a7.chunk.js.LICENSE.txt": "/static/js/2.cb12c6a7.chunk.js.LICENSE.txt",
+    "static/js/2.d57919d7.chunk.js.LICENSE.txt": "/static/js/2.d57919d7.chunk.js.LICENSE.txt",
     "static/media/check-icon.png": "/static/media/check-icon.6f6371b0.png",
     "static/media/correct.wav": "/static/media/correct.bb1912cb.wav",
     "static/media/cross-icon.png": "/static/media/cross-icon.c96b3d1c.png",
@@ -26,7 +26,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.27401809.js",
-    "static/js/2.cb12c6a7.chunk.js",
-    "static/js/app.181870a6.chunk.js"
+    "static/js/2.d57919d7.chunk.js",
+    "static/js/app.8df8b171.chunk.js"
   ]
 }

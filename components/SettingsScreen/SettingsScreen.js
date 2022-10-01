@@ -28,6 +28,11 @@ export default function SettingsScreen() {
                Settings
             </Text>
          </View>}
+         <View style={{marginHorizontal: 20, padding: 5}}>
+            <Text style={[{ color: colors.light, fontSize: 20 }]}>
+               Style
+            </Text>
+         </View>
          <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
             <TouchableOpacity>
                <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
@@ -45,37 +50,6 @@ export default function SettingsScreen() {
                </Text>
             </TouchableOpacity>
          </View>
-
-         <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
-            <TouchableOpacity>
-               <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
-                  setDiscoveryMode(!discoveryMode);
-               }}>
-                  Discovery Mode: {(discoveryMode) ? "On" : "Off"}
-               </Text>
-            </TouchableOpacity>
-         </View>
-
-         <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
-            <TouchableOpacity>
-               <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
-                  setRandomize(!randomize);
-               }}>
-                  Randomize Upon Reset: {(randomize) ? "On" : "Off"}
-               </Text>
-            </TouchableOpacity>
-         </View>
-
-         <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
-            <TouchableOpacity>
-               <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
-                  setAudio(!audio);
-               }}>
-                  Audio: {(audio) ? "On" : "Off"}
-               </Text>
-            </TouchableOpacity>
-         </View>
-
          <View opacity={(discoveryMode)? 0.8 : 1.0} style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
             <TouchableOpacity>
                <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
@@ -87,7 +61,38 @@ export default function SettingsScreen() {
                </Text>
             </TouchableOpacity>
          </View>
-
+         <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
+            <TouchableOpacity>
+               <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
+                  setDiscoveryMode(!discoveryMode);
+               }}>
+                  Change Theme With Every Question: {(discoveryMode) ? "On" : "Off"}
+               </Text>
+            </TouchableOpacity>
+         </View>
+         <View style={{marginHorizontal: 20, padding: 5}}>
+            <Text style={[{ color: colors.light, fontSize: 20 }]}>
+               Other Options
+            </Text>
+         </View>
+         <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
+            <TouchableOpacity>
+               <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
+                  setRandomize(!randomize);
+               }}>
+                  Randomize Upon Reset: {(randomize) ? "On" : "Off"}
+               </Text>
+            </TouchableOpacity>
+         </View>
+         <View style={[styles.settingContainer, { backgroundColor: colors.light, borderColor: colors.dark }]}>
+            <TouchableOpacity>
+               <Text style={[styles.settingText, { color: colors.dark, }]} onPress={() => { 
+                  setAudio(!audio);
+               }}>
+                  Audio: {(audio) ? "On" : "Off"}
+               </Text>
+            </TouchableOpacity>
+         </View>
       </View>
    )
 }
