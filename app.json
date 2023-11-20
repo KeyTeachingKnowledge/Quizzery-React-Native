@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Quizzery",
+    "name": "Key Teaching Knowledge",
     "slug": "quiz-app",
-    "version": "1.0.0",
+    "version": "1.6.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,12 +18,12 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.essamos.quizzery"
+      "bundleIdentifier": "com.keyteachingknowledge.ktk"
     },
     "android": {
-      "package": "com.essamos.quizzery",
-      "permissions" : [],
-      "versionCode": 1,
+      "package": "com.keyteachingknowledge.ktk",
+      "permissions": [],
+      "versionCode": 9,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
@@ -31,6 +31,11 @@
     },
     "web": {
       "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d6c85fb1-b154-4521-a026-e62a6a554315"
+      }
     }
   }
 }

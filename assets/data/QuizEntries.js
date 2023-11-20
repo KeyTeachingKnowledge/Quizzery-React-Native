@@ -1,4 +1,925 @@
-export default [{
+export default [
+  {
+    "Q": "The _______________approach holds that language is primarily used for communication and that it does not exist without users.",
+    "A0": "universal grammar",
+    "A1": "Structural",
+    "A2": "skill-acquisition",
+    "A3": "functional",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "The ___________________ explains language learning by taking into account exposure to language, language production and also feedback on this production.",
+    "A0": "process approach",
+    "A1": "monitor hypothesis",
+    "A2": "natural hypothesis",
+    "A3": "interaction approach",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "The \"input\" in second language acquisition refers to…",
+    "A0": "The language a learner produces in speaking",
+    "A1": "the language a learner is exposed to",
+    "A2": "the teacher’s comments on a student’s oral production",
+    "A3": "the teacher’s feedback on a student’s writing",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "Within the interaction theory,____________________refers to the information which learners collect about the incorrectness of their grammar.",
+    "A0": "positive evidence",
+    "A1": "negative evidence",
+    "A2": "authentic materials",
+    "A3": "reinforcement",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "____________________refers to the process of developing one’s language towards a stage at which very little effort is made in its production.",
+    "A0": "Fossilization",
+    "A1": "Internalization",
+    "A2": "Accuracy",
+    "A3": "Automatization",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "As its name suggests, the Grammar Translation Method is mainly based on translation from the native language into the second language. Which of the following activities is unlikely to be part of a typical Grammar Translation lesson?",
+    "A0": "Asking students to read a text in their native language and answer comprehension questions",
+    "A1": "Asking students to translate vocabulary items from their native language into the target language",
+    "A2": "Explaining some structures from the text and comparing them to structures in the target language",
+    "A3": "Asking learners to prepare a dialog using the structure and vocabulary from the text and act it out",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "The Direct Method assumes that language develops through providing students with ample reading and speaking opportunities. Which of the following activities is unlikely to be part of a typical Direct Method lesson?",
+    "A0": "Students read a text in the Target Language and answer comprehension questions",
+    "A1": "Students ask the teacher about the meaning of some words in the text. He explains them and provides an example for each word",
+    "A2": "Students extract a structure such as \"If only…\" from the text, analyze it and use it in their own conversations",
+    "A3": "The teacher focuses on the pronunciation of some words from the text",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "Which of the following teaching techniques is NOT adopted in the Audio-Lingual Method?",
+    "A0": "Memorizing",
+    "A1": "Drilling",
+    "A2": "Analyzing language",
+    "A3": "Choral repetition",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "In the Audio-Lingual Method, students are asked to repeat chunks of language or sentences multiple times because",
+    "A0": "proponents of this method believe that language learning, like learning to walk, is a matter of habit formation",
+    "A1": "at the time when the method was used, there was no technological equipment to re-play audio tracks",
+    "A2": "this method assumes that language is composed of a set of expressions which we should memorize",
+    "A3": "proponents of this method believe that language use is controlled by isolating and memorizing a set of idioms and phrases which we usually repeat",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "After teaching the first unit in the textbook, the teacher decides to evaluate students’ learning. Which of the following tests would best serve the objective of the teacher",
+    "A0": "A diagnostic test",
+    "A1": "An achievement test",
+    "A2": "A proficiency test",
+    "A3": "A placement test",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "After the correction of students’ production in a test of writing, the teacher observes that although the whole class has very low grades, two of her students performed significantly lower than the others. They barely completed writing a sentence of the required paragraph. The teacher then observed that one of these two students is physically disabled and the other lacks basic literacy skills. In this case which of the following decisions the teacher should take?",
+    "A0": "Ignore the issue and continue with her teaching as usual since this is a test",
+    "A1": "Re-do the same test for the whole class following the same format from paragraph writing",
+    "A2": "Re-do the same test only for the two special needs students after the correction of the first test",
+    "A3": "Provide remediation and then design two different tests; one of them specially designed for the special needs students",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "For more equity and fairness in national exams, the Ministry of National Education has taken a set of procedures. Which of the following is NOT among the procedures which the ministry has taken ?",
+    "A0": "Adapting the exam questions for students with special needs without affecting the content.",
+    "A1": "Giving students with special needs the chance to bring someone who can help in answering the exam.",
+    "A2": "Providing students with special needs with extra time during the exam.",
+    "A3": "Replacing tasks which require some writing with tasks which require no or little writing.",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "After scoring a language test, the teacher discovered that the overwhelming majority of the students obtained a score higher than 15. The teacher thought that the students had cheated or the test was too easy. He then decided to administer a similar test targeting the same objectives. After the scoring of the second test, the students' scores differed completely from those of the first one. We conclude that the test",
+    "A0": "Lacks practicality",
+    "A1": "Lacks reliability",
+    "A2": "Lacks content validity",
+    "A3": "Lacks authenticity",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "A True/False task appeared along with the reading text in a reading comprehension lesson. It included statements such as: Tommy lived in Sri Lanka. T/F? ; He was born in Sri Lanka. T/F? etc. Which of the following reading sub-skills does the True/False task mostly target?",
+    "A0": "Predicting",
+    "A1": "Reading for the main idea",
+    "A2": "Scanning",
+    "A3": "Interpreting meaning",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "The Audio-Lingual Method is known for the centrality of giving students feedback on their performance during the lesson. In this method, which of the following terms is used as an appropriate equivalent to the term \"feedback\"?",
+    "A0": "Stimulus",
+    "A1": "Response",
+    "A2": "Reinforcement",
+    "A3": "Reaction",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "Which of the following materials is widely used by the teachers of the Silent Way?",
+    "A0": "Music player",
+    "A1": "The students' book",
+    "A2": "Colored pictures",
+    "A3": "Colored rods",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "In second language learning theories, mainly Krashen's Monitor Hypothesis, a \"high affective filter\"",
+    "A0": "facilitates language learning",
+    "A1": "hinders language learning",
+    "A2": "allows learners to select only what they want to learn",
+    "A3": "allows teachers to filter items and teach only what students need",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "A task in a grammar lesson about the past simple included pairs of students asking each other how life has changed in the last 50 years. Question types included: \"What kind of home did people live in?\" \"How did people use to communicate?\"... At which stage of the grammar lesson is this task more likely to be introduced ?",
+    "A0": "Presentation stage",
+    "A1": "Practice stage",
+    "A2": "Checking understanding stage",
+    "A3": "Production stage",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "In a textbook that adopts a communicative approach, one of the tasks included a pair-work activity where students role-play a tourist and a hotel front-desk clerk. The tourist is supposed to ask indirect questions about shopping, hotels, restaurants, etc. The clerk is supposed to answer the questions. Which of the following lessons is unlikely to be required for students to successfully do the task?",
+    "A0": "Asking and answering Wh-questions",
+    "A1": "Asking for and giving opinions",
+    "A2": "Negotiating prices",
+    "A3": "Transforming sentences into the passive",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "Maria, a secondary school teacher, observed that many of her students became much more active and engaged in tasks which involve some type of designing, drawing or visualizing processes and ideas. Which of the following pedagogical procedures would better cater for the learning needs of Maria's students?",
+    "A0": "Using more reading, listening and writing activities.",
+    "A1": "Using more experiments and manipulating materials",
+    "A2": "Using more role plays, movements and acting out",
+    "A3": "Using more graphs, charts, maps and images",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "Mourad is a student who enjoys learning with peers. He gets really involved and engaged in tasks which require group and pair work. Even when the teacher asks the class to do an exercise individually, Mourad usually looks for a partner to work with. He would turn to the student sitting next to him and start discussing the tasks or talking about the exercise. From his behavior, we can say that Mourad",
+    "A0": "Is a disruptive student.",
+    "A1": "Learns better through touch and movement.",
+    "A2": "Is a special and naturalistic learner.",
+    "A3": "Learns better through interpersonal intelligence.",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "Although it is now established that most complex mental operations involve an interaction between the right and left hemispheres of the brain, it is claimed that by adolescence, different parts of the brain develop the capacity to specialize only in a set of cognitive, social or emotional functions. This process of brain specialization is scientifically referred to as",
+    "A0": "Plasticity",
+    "A1": "Localization",
+    "A2": "Contextualization",
+    "A3": "Lateralization",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "As children mature, they develop knowledge of the world. This knowledge is stored in the brain as mental representations which are often referred to as schemas. In teaching reading comprehension, these mental representations are often believed to …",
+    "A0": "Hinder comprehension of texts in a second language",
+    "A1": "Facilitate comprehension of texts in a second language",
+    "A2": "Allow students to answer questions without reading the text",
+    "A3": "Help teachers teach reading without any prior planning",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "In a reading lesson, the teacher asked his students to read the title of the reading text: Do Families Spend a Lot of Time Together? and answer the following question: 'What do you think the answer to the question in the title will be?' The students have three possible answers to choose from. Which of the following reading sub-skills does this task target?",
+    "A0": "Inferencing",
+    "A1": "Predicting",
+    "A2": "Skimming",
+    "A3": "Reading for specific information",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "Neuroscientists, though not all of them, believe that the ability to learn faster and with little effort is limited to a certain age, beyond which learning a second language becomes very difficult and laborious. The period beyond which learning a new language is difficult is often referred to as",
+    "A0": "The critical period.",
+    "A1": "The period of fossilization.",
+    "A2": "The sensory-motor period.",
+    "A3": "The period of concrete operations.",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "There is clear evidence that a child acquiring her mother tongue develops the ability to use language not only correctly but also appropriately in different contexts. In second language teaching, the approach that was inspired by this evidence is",
+    "A0": "Grammar Translation",
+    "A1": "the Audio-Lingual Method",
+    "A2": "Communicative Language Teaching",
+    "A3": "the Silent Way",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "Mohamed, Meriem, Ali and Nada are all language students. Not all of them attend their language classes with the same incentive. Which of the four students is intrinsically motivated?",
+    "A0": "Mohamed participates actively in his classes because he knows that part of the grade he will get by the end of the semester is devoted to participation in classroom activities",
+    "A1": "Meriem is an active student. She enjoys her English classes and she likes the language and how native speakers use it.",
+    "A2": "Ali always takes part in the lessons because he knows that his teacher usually meets his father and talks to him about his performance. So, he doesn't want to be reprimanded.",
+    "A3": "Nada is a student who is repeating the level. She got a very low mark in English last year and so she's doing her best to get a higher grade and pass the baccalaureate this year.",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "Mr Naji's students listen to the recording of a presentation at a conference. They are asked to evaluate the tone and pace of the delivery. The aim of the activity is to help students",
+    "A0": "develop the verbal skills necessary to speak publicly.",
+    "A1": "interpret nonverbal clues.",
+    "A2": "recognize the rhetorical structure of oral presentations.",
+    "A3": "extract patterns of spoken discourse from different styles.",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "Which of the following activities is more appropriate for group work?",
+    "A0": "Drilling",
+    "A1": "Gap filling exercises",
+    "A2": "Playing doctor-patient roles",
+    "A3": "Jigsaw reading",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "Nadia notices that one of her students has suddenly become unmotivated and has lost interest in class discussions and activities. After inquiring about this issue, Nadia found out that her student has recently been in some social instability and has family problems. Hence, the teacher concludes that she needs to provide her student with more care, stability, and security before she can get back on track. Which of the following theories better addresses the issue being discussed here?",
+    "A0": "Piaget's theory of cognitive development",
+    "A1": "Gardner's theory of multiple intelligences",
+    "A2": "Maslow's needs theory",
+    "A3": "The Behaviorist theory",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "Mrs. Rice's students are unable to recognize the major concepts in a reading text although they can derive specific details and information. Which of the following activities can Mrs. Rice do with her students to overcome the problem?",
+    "A0": "Explain a set of new vocabulary in the text.",
+    "A1": "Simplify some syntactic structures.",
+    "A2": "Make them listen to an audio version of the text.",
+    "A3": "Make them summarize the main ideas in the text.",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "The supervisor's notes on a teacher's performance draw the latter's attention to the necessity of prioritizing student-student interaction. Which of the following can favor this interaction pattern?",
+    "A0": "Replacement drills",
+    "A1": "Gap filling activity",
+    "A2": "Reordering activity",
+    "A3": "Information gap activity",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "\"I want to get a score equal or higher than 70 so that I can get a place at the university.\" shows",
+    "A0": "integrative motivation",
+    "A1": "instrumental motivation",
+    "A2": "social motivation",
+    "A3": "attitude motivation",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "When teaching grammar, the teacher always provides the learners with the rule at the very beginning of the lesson. Then, she asks them to apply it to different examples. The approach the teacher adopts is",
+    "A0": "deductive",
+    "A1": "inductive",
+    "A2": "communicative",
+    "A3": "discovery",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "When teaching daily routines, a teacher asks one of his students to walk around and find six students who do not go to bed early on Friday. This is an example of",
+    "A0": "a survey",
+    "A1": "a drill",
+    "A2": "a role play.",
+    "A3": "a simulation.",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "Najwa is a secondary school student who has some special characteristics. She is too hasty in dealing with classroom tasks and tests. She raises her hand to answer the teacher's questions even before he finishes talking. She also does not take enough time to consider the tasks and the different possible ways of dealing with them. Hence, she often tends to make a lot of mistakes. What type of learner is Najwa?",
+    "A0": "She's a reflective learner",
+    "A1": "She's an impulsive learner",
+    "A2": "She's an autonomous learner",
+    "A3": "She's a dependent learner.",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "Differences in learning styles can make the same teaching method wonderful for some learners and terrible for others. The three major and predominant learning styles that are generally referred to in the literature are",
+    "A0": "auditory, visual, kinesthetic.",
+    "A1": "sensory, reflective, communicative.",
+    "A2": "kinesthetic, musical, social.",
+    "A3": "logical, auditory, verbal.",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "The process approach to writing focuses on the process of how ideas are developed and formulated to generate texts. Accordingly, writing is NOT",
+    "A0": "creative",
+    "A1": "recursive",
+    "A2": "linear",
+    "A3": "meaning-oriented.",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "When introducing a unit, the teacher asks students to individually write a few ideas about the topic of the unit. He then asks them to discuss their ideas in pairs. After that, they discuss the ideas in large groups. In this activity, the teacher is",
+    "A0": "a planner",
+    "A1": "an organizer",
+    "A2": "an assessor",
+    "A3": "an editor",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "In line with the standards and competency-based education, teachers need to adopt performance assessment in the classroom. It requires learners to demonstrate what they know and are able to do through open-ended tasks. Which of the following is a performance assessment technique?",
+    "A0": "Multiple choice questions",
+    "A1": "Describing a picture",
+    "A2": "Transforming sentences",
+    "A3": "Sentence rewriting",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "Which of the following is NOT a principle of communicative language teaching?",
+    "A0": "Meaning",
+    "A1": "Appropriacy",
+    "A2": "Authenticity",
+    "A3": "Accuracy",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "The 5 C's of the standards-based approach to language teaching are",
+    "A0": "communication, contrasting, connections, comparisons, communities.",
+    "A1": "communication, connections, cultures, comparisons, communities.",
+    "A2": "communication, connections, cultures, consciousness, communities.",
+    "A3": "communication, connections, cultures, comparisons, cooperation",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "In a vocabulary lesson, the teacher wants to teach the word 'abhorrence' in the context of the following sentence: 'My sister Kimmy shows a great abhorrence for crowds, whereas my little brother Michael loves to be the center of attention.' Which of the following techniques should the teacher use?",
+    "A0": "Antonymy",
+    "A1": "Synonymy",
+    "A2": "Definition",
+    "A3": "Example",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "Which of the following tasks can target the S of the SQ4R?",
+    "A0": "Looking at a picture and a topic sentence and guessing the topic.",
+    "A1": "Reading the text and ordering the events chronologically.",
+    "A2": "Writing a short summary of the text.",
+    "A3": "Inferring the writer's attitude",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "In a listening lesson, a student raised his hand and expressed his frustration due to his inability to decipher all the words in the audio track. The teacher advised him not to bother himself with single words and should, instead, try to understand the general meaning of the passage as a whole, making use of what he already knows about the topic. This is a principle of the",
+    "A0": "bottom-up approach",
+    "A1": "top-down approach",
+    "A2": "guided-reading approach",
+    "A3": "phonics approach",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "\"While preparing my lessons, I always try to have tasks in a logical and smooth order.\" The teacher here is concerned with",
+    "A0": "interaction",
+    "A1": "sequencing",
+    "A2": "balancing",
+    "A3": "pacing",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "It is a speaking session today. At the end of the unit, the teacher is running a discussion with her 10 student class about the role of technology in people's life. What is the most appropriate seating arrangement for this activity",
+    "A0": "Horseshoe",
+    "A1": "Double U-shape",
+    "A2": "Individual",
+    "A3": "Pairs",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "Project-based learning offers learners opportunities to develop at various levels. Which of the following is NOT a characteristic of project-based learning?",
+    "A0": "Students are offered lots of structural practice.",
+    "A1": "Students build knowledge through interaction.",
+    "A2": "Students acquire or develop cooperative learning skills.",
+    "A3": "Students are connected with other communities.",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "Mr Khaldi is playing a game with his students. They feel safe and satisfied as their teacher is showing love and respect for every one of them. This is a typical scenario of",
+    "A0": "the Grammar Translation Method.",
+    "A1": "the Silent Way.",
+    "A2": "Cognitive Code Learning.",
+    "A3": "Suggestopedia",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "In the Audio-Lingual Method, teachers analyze learners' language production to highlight the problems or errors which might be due to the interference of the first language with the structures of the second one. This process which teachers undertake is called",
+    "A0": "error analysis!",
+    "A1": "interlanguage",
+    "A2": "interference",
+    "A3": "contrastive analysis!",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "In the Audio-Lingual Method, students are asked to repeat chunks of language or sentences multiple times because",
+    "A0": "proponents of this method believe that language learning, like learning to walk, is a matter of habit formation",
+    "A1": "at the time when the method was used, there was no technological equipment to re-play audio tracks",
+    "A2": "this method assumes that language is composed of a set of expressions which we should memorize",
+    "A3": "proponents of this method believe that language use is controlled by isolating and memorizing a set of idioms and phrases which we usually repeat",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "After teaching the first unit in the textbook, the teacher decides to evaluate students’ learning. Which of the following tests would best serve the objective of the teacher",
+    "A0": "A diagnostic test",
+    "A1": "An achievement test",
+    "A2": "A proficiency test",
+    "A3": "A placement test",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "After the correction of students’ production in a test of writing, the teacher observes that although the whole class has very low grades, two of her students performed significantly lower than the others. The teacher then observed that one of these two students is physically disabled and the other lacks basic literacy skills. In this case which of the following decisions should the teacher take?",
+    "A0": "Ignore the issue and continue with her teaching as usual since this is a test",
+    "A1": "Re-do the same test for the whole class following the same format from paragraph writing",
+    "A2": "Re-do the same test only for the two special needs students after the correction of the first test",
+    "A3": "Provide remediation and then design two different tests; one of them specially designed for the special needs students",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "For more equity and fairness in national exams, the Ministry of National Education has taken a set of procedures. Which of the following is NOT among the procedures which the ministry has taken?",
+    "A0": "Adapting the exam questions for students with special needs without affecting the content.",
+    "A1": "Giving students with special needs the chance to bring someone who can help in answering the exam.",
+    "A2": "Providing students with special needs with extra time during the exam.",
+    "A3": "Replacing tasks which require some writing with tasks which require no or little writing.",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "After scoring a language test, the teacher discovered that the overwhelming majority of the students obtained a score higher than 15. The teacher thought that the students had cheated or the test was too easy. He then decided to administer a similar test targeting the same objectives. After the scoring of the second test, the students' scores differed completely from those of the first one. We conclude that the test",
+    "A0": "Lacks practicality",
+    "A1": "Lacks reliability",
+    "A2": "Lacks content validity",
+    "A3": "Lacks authenticity",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "A True/False task appeared along with the reading text in a reading comprehension lesson. It included statements such as: Tommy lived in Sri Lanka. T/F? ; He was born in Sri Lanka. T/F? etc. Which of the following reading sub-skills does the True/False task mostly target?",
+    "A0": "Predicting",
+    "A1": "Reading for the main idea",
+    "A2": "Scanning",
+    "A3": "Interpreting meaning",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "The Audio-Lingual Method is known for the centrality of giving students feedback on their performance during the lesson. In this method, which of the following terms is used as an appropriate equivalent to the term 'feedback'?",
+    "A0": "Stimulus",
+    "A1": "Response",
+    "A2": "Reinforcement",
+    "A3": "Reaction",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "Which of the following materials is widely used by the teachers of the Silent Way?",
+    "A0": "Music player",
+    "A1": "The students' book",
+    "A2": "Colored pictures",
+    "A3": "Colored rods",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "In second language learning theories, mainly Krashen's Monitor Hypothesis, a 'high affective filter'",
+    "A0": "facilitates language learning",
+    "A1": "hinders language learning",
+    "A2": "allows learners to select only what they want to learn",
+    "A3": "allows teachers to filter items and teach only what students need",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "A task in a grammar lesson about the past simple included pairs of students asking each other how life has changed in the last 50 years. Question types included: 'What kind of home did people live in?' 'How did people use to communicate?'... At which stage of the grammar lesson is this task more likely to be introduced?",
+    "A0": "Presentation stage",
+    "A1": "Practice stage",
+    "A2": "Checking understanding stage",
+    "A3": "Production stage",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "In a textbook that adopts a communicative approach, one of the tasks included a pair-work activity where students role-play a tourist and a hotel front-desk clerk. The tourist is supposed to ask indirect questions about shopping, hotels, restaurants, etc. The clerk is supposed to answer the questions. Which of the following lessons is unlikely to be required for students to successfully do the task?",
+    "A0": "Asking and answering Wh-questions",
+    "A1": "Asking for and giving opinions",
+    "A2": "Negotiating prices",
+    "A3": "Transforming sentences into the passive",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "Maria, a secondary school teacher, observed that many of her students became much more active and engaged in tasks which involve some type of designing, drawing or visualizing processes and ideas. Which of the following pedagogical procedures would better cater for the learning needs of Maria's students?",
+    "A0": "Using more reading, listening and writing activities.",
+    "A1": "Using more experiments and manipulating materials",
+    "A2": "Using more graphs, charts, maps and images",
+    "A3": "Using more role plays, movements and acting out",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "Mourad is a student who enjoys learning with peers. He gets really involved and engaged in tasks which require group and pair work. Even when the teacher asks the class to do an exercise individually, Mourad usually looks for a partner to work with. He would turn to the student sitting next to him and start discussing the tasks or talking about the exercise. From his behavior, we can say that Mourad",
+    "A0": "Is a disruptive student.",
+    "A1": "Learns better through touch and movement.",
+    "A2": "Is a special and naturalistic learner.",
+    "A3": "Learns better through interpersonal intelligence.",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "Although it is now established that most complex mental operations involve an interaction between the right and left hemispheres of the brain, it is claimed that by adolescence, different parts of the brain develop the capacity to specialize only in a set of cognitive, social or emotional functions. This process of brain specialization is scientifically referred to as",
+    "A0": "Plasticity",
+    "A1": "Localization",
+    "A2": "Contextualization",
+    "A3": "Lateralization",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "As children mature, they develop knowledge of the world. This knowledge is stored in the brain as mental representations which are often referred to as schemas. In teaching reading comprehension, these mental representations are often believed to …",
+    "A0": "Hinder comprehension of texts in a second language",
+    "A1": "Facilitate comprehension of texts in a second language",
+    "A2": "Allow students to answer questions without reading the text",
+    "A3": "Help teachers teach reading without any prior planning",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "In a reading lesson, the teacher asked his students to read the title of the reading text: Do Families Spend a Lot of Time Together? and answer the following question: 'What do you think the answer to the question in the title will be?' The students have three possible answers to choose from. Which of the following reading sub-skills does this task target?",
+    "A0": "Inferencing",
+    "A1": "Predicting",
+    "A2": "Skimming",
+    "A3": "Reading for specific information",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "Neuroscientists, though not all of them, believe that the ability to learn faster and with little effort is limited to a certain age, beyond which learning a second language becomes very difficult and laborious. The period beyond which learning a new language is difficult is often referred to as",
+    "A0": "The critical period.",
+    "A1": "The period of fossilization.",
+    "A2": "The sensory-motor period.",
+    "A3": "The period of concrete operations.",
+    "correct": "1",
+    "explanation": ""
+},
+{
+    "Q": "There is clear evidence that a child acquiring her mother tongue develops the ability to use language not only correctly but also appropriately in different contexts. In second language teaching, the approach that was inspired by this evidence is",
+    "A0": "Grammar Translation",
+    "A1": "the Audio-Lingual Method",
+    "A2": "Communicative Language Teaching",
+    "A3": "the Silent Way",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "Mohamed, Meriem, Ali and Nada are all language students. Not all of them attend their language classes with the same incentive. Which of the four students is intrinsically motivated?",
+    "A0": "Mohamed participates actively in his classes because he knows that part of the grade he will get by the end of the semester is devoted to participation in classroom activities",
+    "A1": "Meriem is an active student. She enjoys her English classes and she likes the language and how native speakers use it.",
+    "A2": "Ali always takes part in the lessons because he knows that his teacher usually meets his father and talks to him about his performance. So, he doesn't want to be reprimanded.",
+    "A3": "Nada is a student who is repeating the level. She got a very low mark in English last year and so she's doing her best to get a higher grade and pass the baccalaureate this year.",
+    "correct": "2",
+    "explanation": ""
+},
+{
+    "Q": "Mr Naji's students listen to the recording of a presentation at a conference. They are asked to evaluate the tone and pace of the delivery. The aim of the activity is to help students",
+    "A0": "develop the verbal skills necessary to speak publicly.",
+    "A1": "interpret nonverbal clues.",
+    "A2": "recognize the rhetorical structure of oral presentations.",
+    "A3": "extract patterns of spoken discourse from different styles.",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "Which of the following activities is more appropriate for group work?",
+    "A0": "Drilling",
+    "A1": "Gap filling exercises",
+    "A2": "Playing doctor-patient roles",
+    "A3": "Jigsaw reading",
+    "correct": "4",
+    "explanation": ""
+},
+{
+    "Q": "Nadia notices that one of her students has suddenly become unmotivated and has lost interest in class discussions and activities. After inquiring about this issue, Nadia found out that her student has recently been in some social instability and has family problems. Hence, the teacher concludes that she needs to provide her student with more care, stability and security before she can get back on track. Which of the following theories better addresses the issue being discussed here?",
+    "A0": "Piaget's theory of cognitive development",
+    "A1": "Gardner's theory of multiple intelligences",
+    "A2": "Maslow's needs theory",
+    "A3": "The Behaviorist theory",
+    "correct": "3",
+    "explanation": ""
+},
+{
+    "Q": "Mrs. Rice's students are unable to recognize the major concepts in a reading text although they can derive specific details and information. Which of the following activities can Mrs. Rice do with her students to overcome the problem?",
+    "A0": "Explain a set of new vocabulary in the text.",
+    "A1": "Simplify some syntactic structures.",
+    "A2": "Make them listen to an audio version of the text.",
+    "A3": "Make them summarize the main ideas in the text.",
+    "correct": "2",
+    "explanation": ""
+},
+
+    {
+        "Q": "The supervisor's notes on a teacher's performance draw the latter's attention to the necessity of prioritizing student-student interaction. Which of the following can favor this interaction pattern?",
+        "A0": "Replacement drills",
+        "A1": "Gap filling activity",
+        "A2": "Reordering activity",
+        "A3": "Information gap activity",
+        "correct": "3",
+        "explanation": ""
+    },
+    {
+        "Q": "\"I want to get a score equal or higher than 70 so that I can get a place at the university.\" shows",
+        "A0": "Integrative motivation",
+        "A1": "Instrumental motivation",
+        "A2": "Social motivation",
+        "A3": "Attitude motivation",
+        "correct": "2",
+        "explanation": ""
+    },
+    {
+        "Q": "When teaching grammar, the teacher always provides the learners with the rule at the very beginning of the lesson. Then, she asks them to apply it to different examples. The approach the teacher adopts is",
+        "A0": "Deductive",
+        "A1": "Inductive",
+        "A2": "Communicative",
+        "A3": "Discovery",
+        "correct": "1",
+        "explanation": ""
+    },
+    {
+        "Q": "When teaching daily routines, a teacher asks one of his students to walk around and find six students who do not go to bed early on Friday. This is an example of",
+        "A0": "A survey",
+        "A1": "A drill",
+        "A2": "A role play",
+        "A3": "A simulation",
+        "correct": "3",
+        "explanation": ""
+    },
+    {
+        "Q": "Najwa is a secondary school student who has some special characteristics. What type of learner is Najwa?",
+        "A0": "She's a reflective learner",
+        "A1": "She's an impulsive learner",
+        "A2": "She's an autonomous learner",
+        "A3": "She's a dependent learner",
+        "correct": "2",
+        "explanation": ""
+    },
+    {
+        "Q": "Differences in learning styles can make the same teaching method wonderful for some learners and terrible for others. The three major and predominant learning styles that are generally referred to in the literature are",
+        "A0": "Auditory, visual, kinesthetic",
+        "A1": "Sensory, reflective, communicative",
+        "A2": "Kinesthetic, musical, social",
+        "A3": "Logical, auditory, verbal",
+        "correct": "1",
+        "explanation": ""
+    },
+    {
+        "Q": "The process approach to writing focuses on the process of how ideas are developed and formulated to generate texts. Accordingly, writing is NOT",
+        "A0": "Creative",
+        "A1": "Recursive",
+        "A2": "Linear",
+        "A3": "Meaning-oriented",
+        "correct": "3",
+        "explanation": ""
+    },
+    {
+        "Q": "When introducing a unit, the teacher asks students to individually write few ideas about the topic of the unit. In this activity, the teacher is",
+        "A0": "A planner",
+        "A1": "An organizer",
+        "A2": "An assessor",
+        "A3": "An editor",
+        "correct": "2",
+        "explanation": ""
+    },
+    {
+        "Q": "In line with the standards and competency-based education, teachers need to adopt performance assessment in the classroom. Which of the following is a performance assessment technique?",
+        "A0": "Multiple choice questions",
+        "A1": "Describing a picture",
+        "A2": "Transforming sentences",
+        "A3": "Sentence rewriting",
+        "correct": "2",
+        "explanation": ""
+    },
+    {
+        "Q": "Which of the following is NOT a principle of communicative language teaching?",
+        "A0": "Meaning",
+        "A1": "Appropriacy",
+        "A2": "Authenticity",
+        "A3": "Accuracy",
+        "correct": "4",
+        "explanation": ""
+    },
+    {
+        "Q": "The 5 C's of the standards-based approach to language teaching are",
+        "A0": "Communication, contrasting, connections, comparisons, communities",
+        "A1": "Communication, connections, cultures, comparisons, communities",
+        "A2": "Communication, connections, cultures, consciousness, communities",
+        "A3": "Communication, connections, cultures, comparisons, cooperation",
+        "correct": "2",
+        "explanation": ""
+    },
+    {
+        "Q": "In a vocabulary lesson, the teacher wants to teach the word \"abhorrence\" in the context of the following sentence: \"My sister Kimmy shows a great abhorrence for crowds, whereas my little brother Michael loves to be the center of attention.\" Which of the following techniques should the teacher use?",
+        "A0": "Antonymy",
+        "A1": "Synonymy",
+        "A2": "Definition",
+        "A3": "Example",
+        "correct": "4",
+        "explanation": ""
+    },
+    {
+        "Q": "Which of the following tasks can target the S of the SQ4R?",
+        "A0": "Looking at a picture and a topic sentence and guessing the topic",
+        "A1": "Reading the text and ordering the events chronologically",
+        "A2": "Writing a short summary of the text",
+        "A3": "Inferring the writer's attitude",
+        "correct": "1",
+        "explanation": ""
+    },
+    {
+        "Q": "In a listening lesson, a student raised his hand and expressed his frustration due to his inability to decipher all the words in the audio track. The teacher advised him not to bother himself with single words and should, instead, try to understand the general meaning of the passage as a whole, making use of what he already knows about the topic. This is a principle of the",
+        "A0": "Bottom-up approach",
+        "A1": "Top-down approach",
+        "A2": "Guided-reading approach",
+        "A3": "Phonics approach",
+        "correct": "2",
+        "explanation": ""
+    },
+    {
+        "Q": "\"While preparing my lessons, I always try to have tasks in a logical and smooth order.\" The teacher here is concerned with",
+        "A0": "Interaction",
+        "A1": "Sequencing",
+        "A2": "Balancing",
+        "A3": "Pacing",
+        "correct": "2",
+        "explanation": ""
+    },
+    {
+        "Q": "It is a speaking session today. At the end of the unit, the teacher is running a discussion with her 10 student class about the role of technology in people's life. What is the most appropriate seating arrangement for this activity?",
+        "A0": "Horseshoe",
+        "A1": "Double U-shape",
+        "A2": "Individual",
+        "A3": "Pairs",
+        "correct": "1",
+        "explanation": ""
+    },
+    {
+        "Q": "Project-based learning offers learners opportunities to develop at various levels. Which of the following is NOT a characteristic of project-based learning?",
+        "A0": "Students are offered lots of structural practice",
+        "A1": "Students build knowledge through interaction",
+        "A2": "Students acquire or develop cooperative learning skills",
+        "A3": "Students are connected with other communities",
+        "correct": "1",
+        "explanation": ""
+    },
+    {
+        "Q": "Mr. Khaldi is playing a game with his students. They feel safe and satisfied as their teacher is showing love and respect for every one of them. This is a typical scenario of",
+        "A0": "The Grammar Translation Method",
+        "A1": "The Silent Way",
+        "A2": "Cognitive Code Learning",
+        "A3": "Suggestopedia",
+        "correct": "4",
+        "explanation": ""
+    },
+    {
+        "Q": "In the Audio-Lingual Method, teachers analyze learners' language production in order to highlight the problems or errors which might be due to the interference of the first language with the structures of the second one. This process which teachers undertake is called",
+        "A0": "Error analysis",
+        "A1": "Interlanguage",
+        "A2": "Interference",
+        "A3": "Contrastive analysis",
+        "correct": "1",
+        "explanation": ""
+    },
+    {
+        "Q": "While scoring students' test on writing, the teacher noticed that one of his students' handwriting is totally illegible. After inquiring about the student, the teacher discovered that she has a physical disability with her hand. Which of the following decisions should the teacher take?",
+        "A0": "Give the student the grade she deserves for the writing",
+        "A1": "Give the student another chance to take the test",
+        "A2": "Ask another student to rewrite the text for the disabled student",
+        "A3": "Give the student an oral test which targets the same topic",
+        "correct": "3",
+        "explanation": ""
+    },
+    {
+        "Q": "The results of a language teacher's survey reveal that a large number of her students are endowed with some kind of naturalist intelligence. Which of the following activities would best serve this purpose?",
+        "A0": "Taking students to a park to see animals",
+        "A1": "Sticking pictures of nature (animals, birds, etc.) around the classroom",
+        "A2": "Designing reading and speaking activities about nature",
+        "A3": "Inviting the teachers of science and geography to talk about their lessons",
+        "correct": "1",
+        "explanation": ""
+    },
+    {
+        "Q": "In a unit about 'Health', Mrs. Raji wants to teach the effects of eating fast food on teens' health. For this reason, she intends to use the pictures in the students' book, including one which shows an obese teenager. In case there is a student suffering from obesity in the classroom, what do you think the teacher should do?",
+        "A0": "Teach the lesson as it is without any modification",
+        "A1": "Use the obese student to introduce the word 'obesity'",
+        "A2": "Ask the student to leave the classroom before showing the picture of obesity",
+        "A3": "Avoid using the picture and teach the word differently",
+        "correct": "4",
+        "explanation": ""
+    },
+    {
+        "Q": "Which of the following skills dominates the early stages of language learning in the Total Physical Response method?",
+        "A0": "Reading",
+        "A1": "Writing",
+        "A2": "Listening",
+        "A3": "Speaking",
+        "correct": "3",
+        "explanation": ""
+    },
+    {
+        "Q": "Within the standards-based framework, while teaching a unit on 'Pollution', the teacher is targeting the 'Connections' area of the 5 Cs. Which of the following activities would best serve this objective?",
+        "A0": "Asking students to compare the effects of pollution to those of deforestation",
+        "A1": "Asking students to interview the science teachers in their school about harmful chemicals",
+        "A2": "Asking students to interview the head of the local council about what they do to reduce the effects of pollution",
+        "A3": "Asking students to read a text about the causes and effects of pollution",
+        "correct": "3",
+        "explanation": ""
+    },
+    {
+        "Q": "\"Great job, Tony!\" In the context of the classroom, this reaction from a teacher is an instance of",
+        "A0": "Positive interdependence",
+        "A1": "Scaffolding",
+        "A2": "Positive reinforcement",
+        "A3": "Eliciting",
+        "correct": "3",
+        "explanation": ""
+    },
+    {
+        "Q": "The Silent Way is mainly based on the principles of the Cognitive Approach. One of these principles is that 'teaching should be subordinated to learning'. This means that",
+        "A0": "The teacher's role in the classroom is secondary",
+        "A1": "Teaching is learner-centered",
+        "A2": "The teacher does not have to plan his teaching",
+        "A3": "It is the students who decide on what to learn",
+        "correct": "2",
+        "explanation": ""
+    },
+    {
+        "Q": "In a reading lesson, after the students answered a couple of questions about the main ideas of the text, the teacher asked them to talk about what strategies they used to get their answers. The teacher is thus targeting students'…",
+        "A0": "Cognitive strategies",
+        "A1": "Metacognitive strategies",
+        "A2": "Social strategies",
+        "A3": "Affective strategies",
+        "correct": "2",
+        "explanation": ""
+    },
+    {
+        "Q": "Kamal is an English language student. He often reflects on his performance, evaluates his achievements and keeps a diary on which he records his thoughts about his learning experience. Kamal is",
+        "A0": "A logical learner",
+        "A1": "A linguistic learner",
+        "A2": "A tactile learner",
+        "A3": "An intrapersonal learner",
+        "correct": "4",
+        "explanation": ""
+    },
+    {
+        "Q": "Rachida is a high school student. She has a good command of the language. She actively takes part in small closed group activities. However, she is always reluctant to participate in activities which expose her to the public. She has recently refused to represent her school in a regional public speaking contest. Her teachers conclude that Rachida requires a special treatment because she...",
+        "A0": "is not intrinsically motivated",
+        "A1": "has a negative attitude to English.",
+        "A2": "is a field dependent learner.",
+        "A3": "has low self-esteem",
+        "correct": "4",
+        "explanation": ""
+    },
+  
+  {
   "A0": "Inferencing",
   "A1": "Scanning",
   "A2": "Predicting",
@@ -184,7 +1105,7 @@ export default [{
   "A2": "Deductive learning",
   "A3": "Active Learning",
   "Q": "\u00a0The approach where examples are given and the students derive the rule from practice is:",
-  "correct": "3",
+  "correct": "1",
   "explanation": "",
   "referTo": ""
 },{

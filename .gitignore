@@ -466,3 +466,8 @@
 .expo/web/cache/production/images/chrome-icon/chrome-icon-50cef4ac3eb369e0607fc4f7ae55f574d0c8957417bbf408df427550e759c571-contain-transparent/chrome-icon-144.png
 .expo/web/cache/production/images/chrome-icon/chrome-icon-50cef4ac3eb369e0607fc4f7ae55f574d0c8957417bbf408df427550e759c571-contain-transparent/chrome-icon-192.png
 .expo/web/cache/production/images/chrome-icon/chrome-icon-50cef4ac3eb369e0607fc4f7ae55f574d0c8957417bbf408df427550e759c571-contain-transparent/chrome-icon-512.png
+node_modules/
+node_modules/.bin/acorn
+node_modules/**
+.expo/**
+.DS_Store
