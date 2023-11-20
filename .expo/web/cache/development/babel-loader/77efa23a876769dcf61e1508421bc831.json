@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default {\n  get forceTouchAvailable() {\n    return false;\n  }\n\n};","map":{"version":3,"sources":["PlatformConstants.web.ts"],"names":[],"mappings":"AAAA,eAAe;EACb,IAAA,mBAAA,GAA0B;IACxB,OAAA,KAAA;EACD;;AAHY,CAAf","sourcesContent":["export default {\n  get forceTouchAvailable() {\n    return false;\n  },\n};\n"]},"metadata":{},"sourceType":"module"}

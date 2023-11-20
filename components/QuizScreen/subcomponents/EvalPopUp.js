@@ -24,7 +24,7 @@ const EvalPopUp = ({ explanation, referTo, totalCount, correctAnswers}) => {
   const colors = useSelector(Colors)
   return (
     <View style={styles.centeredView}>
-      <Modal
+      {(isCorrect !== -1) && <Modal
         animationType={"slide"}
         transparent={true}
         visible={modalVisible}
@@ -34,17 +34,19 @@ const EvalPopUp = ({ explanation, referTo, totalCount, correctAnswers}) => {
       >
         <View style={styles.centeredView}>
           <View style={[styles.modalView, {backgroundColor: colors.light, borderColor: 'white'}]}>
-            {(isCorrect == 1) ? 
+            {(isCorrect == 1 )?
             (
               <>
                 <Image style={styles.checkIcon} source={require('../../../assets/check-icon.png')}></Image>
                 <Text style={[styles.modalText, {color: colors.dark, fontFamily: 'Poppins-Bold', fontSize: 19 }]}>{(!isTraversing)?"That's correct!":"That was correct!"}</Text>
                 {(isTraversing)?
                 <>
+                {(explanation != '')?
                  <Text style={[styles.modalText, {color: colors.dark,}]}>
                  <Text style={{ fontFamily: 'Poppins-Bold' }}>Explanation:{"\n"} </Text>
                  <Text>{explanation}</Text>
-               </Text>
+               </Text>: null
+              }
                {(referTo)?
                <Text style={[styles.modalText, {color: colors.dark}]}>
                 <Text style={{ fontFamily: 'Poppins-Bold' }}>Refer to:{"\n"}</Text>
@@ -57,25 +59,24 @@ const EvalPopUp = ({ explanation, referTo, totalCount, correctAnswers}) => {
               </>
             ) 
             :
-            ( 
+            ((isCorrect == 0)?( 
             <>
               <Image style={styles.checkIcon} source={require('../../../assets/cross-icon.png')}></Image>
               <Text style={[styles.modalText, {color: colors.dark}, { fontFamily: 'Poppins-Bold', fontSize: 19 }]}>{(!isTraversing)?"That isn't correct!":"That wasn't correct!"}</Text>
               <Text style={{ color: colors.dark, fontFamily: 'Poppins-Regular', fontSize: 17 }}><Text style={{ fontFamily: 'Poppins-Bold', fontSize: 17 }}>{letters[correctAnswers[shownQuestion] - 1]}</Text> is the correct answer.</Text>
-              <Text style={[styles.modalText, {color: colors.dark}]}>
+              {(explanation)? <Text style={[styles.modalText, {color: colors.dark}]}>
                 <Text style={{ fontFamily: 'Poppins-Bold' }}>Explanation:{"\n"} </Text>
                 <Text>{explanation}</Text>
-              </Text>
+              </Text>:null}
               {(referTo)?
               <Text style={[styles.modalText, {color: colors.dark}]}>
                 <Text style={{ fontFamily: 'Poppins-Bold' }}>Refer to:{"\n"}</Text>
                 <Text>{referTo}</Text>
-              </Text>:null
-              }
+              </Text>:null}
               </>
-
-              )}
-            <Pressable
+              ):null)
+              }
+             <Pressable
               style={[styles.submitContainer, {backgroundColor: colors.dark, borderColor: colors.light}]}
               onPress={() => {
                 setModalVisible(!modalVisible)
@@ -99,8 +100,7 @@ const EvalPopUp = ({ explanation, referTo, totalCount, correctAnswers}) => {
             </Pressable>
           </View>
         </View>
-      </Modal>
-
+      </Modal>}
     </View>
   );
 };
@@ -110,10 +110,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 22
+    marginTop: 22,
   },
   modalView: {
     margin: 20,
+    maxWidth: '93%',
     borderWidth:1,
     borderRadius: 28,
     padding: 35,

@@ -7,7 +7,9 @@ const initialState = {
    discoveryMode: false,
    comingFromHome: true,
    allColors: lightColors,
-   allColorsHelper: 1
+   allColorsHelper: 1,
+   randomize: false,
+   audio: true,
  }
  
  const reducers = {
@@ -31,6 +33,12 @@ const initialState = {
        if(state.discoveryMode){
          state.colorIndex = (state.colorIndex + 1) % state.allColors.length
          }
+    },
+    SetRandomize(state, action) {
+      state.randomize = action.payload
+    },
+    SetAudio(state, action) {
+      state.audio = action.payload
     }
 
  }
@@ -43,6 +51,8 @@ export const { SetComingFromHome } = settingsSlice.actions
 export const { SetAllColors } = settingsSlice.actions
 export const { RotateColor } = settingsSlice.actions
 export const { SetAllColorsHelper } = settingsSlice.actions 
+export const { SetRandomize } = settingsSlice.actions
+export const { SetAudio } = settingsSlice.actions
 export const Colors = (state) => state.settings.allColors[state.settings.colorIndex];
 
 export default settingsSlice.reducer

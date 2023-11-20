@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
      paddingHorizontal: 10,
      paddingVertical: 25,
      borderWidth: 1.2,
-     minWidth: '90%',
-     maxWidth: '90%'
+     minWidth: '93%',
+     maxWidth: '93%'
  
    },
    question: {

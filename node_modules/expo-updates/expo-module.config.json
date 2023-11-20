@@ -1,8 +1,0 @@
-{
-  "name": "expo-updates",
-  "platforms": ["ios", "android"],
-  "ios": {
-    "appDelegateSubscribers": ["ExpoUpdatesAppDelegateSubscriber"],
-    "reactDelegateHandlers": ["ExpoUpdatesReactDelegateHandler"]
-  }
-}

@@ -9,6 +9,7 @@ const initialState = {
    isCorrect: -1,
    modalVisible: false,
    finishFlag: false,
+   newQuiz: true
  }
  
  const reducers = {
@@ -34,6 +35,9 @@ const initialState = {
     SetIsCorrect(state, action) {
       state.isCorrect = action.payload
     },
+    SetNewQuiz(state, action) {
+      state.newQuiz = action.payload
+    },
     ResetQuiz(state){
       state.currentQuestion = 0;
       state.shownQuestion = 0;
@@ -41,6 +45,7 @@ const initialState = {
       state.selectedChoice = -1;
       state.selectedChoices = [];
       state.finishFlag = false;
+      state.newQuiz = true;       // means we will randomize upon start then set it to false in app.js
 
     }
     
@@ -56,5 +61,6 @@ export const { SetModalVisible } = quizSlice.actions
 export const { SetFinishFlag } = quizSlice.actions
 export const { SetIsCorrect } = quizSlice.actions
 export const { ResetQuiz } = quizSlice.actions
+export const { SetNewQuiz } = quizSlice.actions
 export const IsTraversing = (state) => (state.quiz.shownQuestion !== state.quiz.currentQuestion)
 export default quizSlice.reducer

@@ -22,11 +22,11 @@ export default function InfoBar({ totalCount, correctAnswers}){
    return (
      <View style={styles.infoBar}>
      <View>
-       <Text style={[styles.infoItem,{backgroundColor: colors.light, color: colors.dark, borderColor: colors.border}]}> <Text style={styles.Q}>Question</Text> {shownQuestion+1}/{totalCount}</Text>
+       <Text style={[styles.infoItem,{backgroundColor: colors.light, color: colors.dark, borderColor: colors.border, marginLeft: 'auto'}]}> <Text style={styles.Q}>Question</Text> {shownQuestion+1}/{totalCount}</Text>
      </View>
 
      <View>
-       <Text style={[styles.infoItem,{backgroundColor: colors.light, color: colors.dark, borderColor: colors.border}]}>📈 {(accuracy=='-.0%')?('-'):(accuracy)}  </Text>
+       <Text style={[styles.infoItem,{backgroundColor: colors.light, color: colors.dark, borderColor: colors.border, marginRight: 'auto'}]}>📈 {(accuracy=='-.0%')?('-'):(accuracy)}  </Text>
      </View>
    </View>
    )
@@ -38,11 +38,9 @@ export default function InfoBar({ totalCount, correctAnswers}){
      justifyContent: 'space-between',
      alignItems: 'center',
      marginTop: 40,
-     width: '100%',
- 
+     width: '93%',
    },
    infoItem: {
-     
      padding: 10,
      borderRadius: 20,
      borderWidth: 0.8,

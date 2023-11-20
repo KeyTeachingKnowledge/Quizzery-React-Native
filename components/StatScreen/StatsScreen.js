@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Colors } from '../../redux/slices/settings';
 import { ResetQuiz } from '../../redux/slices/quiz';
 import { SetAccuracy } from '../../redux/slices/stats';
+import { Platform } from 'react-native';
 
 export default function StatsScreen({ correctAnswers, navigation }) {
    const dispatch = useDispatch();
@@ -66,11 +67,11 @@ export default function StatsScreen({ correctAnswers, navigation }) {
 
    return (
       <View style={[styles.container, { backgroundColor: colors.dark }]}>
-         <View style={styles.logoContainer}>
+         {(Platform.OS !== 'web')&&<View style={styles.logoContainer}>
             <Text style={[styles.logo, { color: colors.light }]}>
                Statistics
             </Text>
-         </View>
+         </View>}
 
          <View style={[styles.settingContainer, { backgroundColor: colors.dark, borderColor: colors.light }]}>
             <Text style={[styles.settingText, { color: colors.light, }]} onPress={() => {

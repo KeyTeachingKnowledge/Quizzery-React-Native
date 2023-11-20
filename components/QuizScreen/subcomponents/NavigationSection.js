@@ -9,6 +9,8 @@ import { IsTraversing } from '../../../redux/slices/quiz';
 import { Colors } from '../../../redux/slices/settings';
 import { SetComingFromHome } from '../../../redux/slices/settings';
 import { SetIsCorrect } from '../../../redux/slices/quiz';
+import { Audio } from 'expo-av';
+
 
 export default function NavigationSection({ navigation,  totalCount }) {
    const dispatch = useDispatch();
@@ -22,18 +24,22 @@ export default function NavigationSection({ navigation,  totalCount }) {
    const setIsCorrect = (payload) => dispatch(SetIsCorrect(payload))
    const colors = useSelector(Colors)
    const setComingFromHome = (payload)=> dispatch(SetComingFromHome(payload))
+   const audio = useSelector(state => state.settings.audio)
    const handleSubmit = () => {
       if(finishFlag){
          navigation.navigate('StatsScreen')
          setComingFromHome(false)
       }
       if (isCorrect != -1 && !finishFlag) {
+         if (audio) {
+         if (isCorrect == 1)  playSoundCorrect()
+         else playSoundIncorrect()
+         }
          setModalVisible(true);
       }
-      if(currentQuestion == totalCount-1){
+      if(currentQuestion == totalCount -1 && isCorrect != -1){
          setFinishFlag(true);
       }
-     
       
    }
 
@@ -57,13 +63,38 @@ export default function NavigationSection({ navigation,  totalCount }) {
       }},[]);
 
 
+      // For Audio
+      const [sound, setSound] = useState();
+
+      async function playSoundCorrect() {
+        const { sound } = await Audio.Sound.createAsync(require('../../../assets/audio/correct.wav'));
+        setSound(sound);
+      
+        await sound.playAsync();
+      }
+      
+      async function playSoundIncorrect() {
+         const { sound } = await Audio.Sound.createAsync(require('../../../assets/audio/incorrect.wav'));
+         setSound(sound);
+          await sound.playAsync();
+       }
+      
+      useEffect(() => {
+        return sound
+          ? () => {
+              sound.unloadAsync();
+            }
+          : undefined;
+      }, [sound]);
+
+
    return (
-      <View style={styles.navigationSection}>
+      <View style={styles.container}>
          <View style={[styles.submitContainer, { backgroundColor: colors.light, borderColor: colors.border }, (isCorrect == -1 && !isTraversing) ? { backgroundColor: colors.dark } : { backgroundColor: colors.light }]}>
             <TouchableOpacity style={[styles.submit]} onPress={() => (!isTraversing || ((currentQuestion == totalCount) && (shownQuestion == totalCount - 1))) ? handleSubmit():handleNext() }>
                {(!isTraversing || ((currentQuestion == totalCount) && (shownQuestion == totalCount - 1))) ?
                   (
-                     <Text style={[styles.submitText, { color: colors.dark, }, (isCorrect == -1) && { color: colors.light }]} >
+                     <Text style={[styles.submitText,   { color: colors.dark, }, ((isCorrect == -1) && !finishFlag) && { color: colors.light }]} >
                         {( finishFlag ) ? 'See Results' : 'Submit'}
                      </Text>
                   )
@@ -93,15 +124,17 @@ const styles = StyleSheet.create({
    container: {
       flex: 1,
       alignItems: 'center',
+      width: '93%'
    },
 
    submitContainer: {
-      width: '90%',
+      maxwidth: '100%',
+      minWidth: '100%',
       borderWidth: 2,
       marginHorizontal: 20,
       borderRadius: 10,
       padding: 10,
-      marginVertical: 10
+      marginVertical: 10,
    },
    submitText: {
       fontFamily: 'Poppins-Bold',
@@ -109,4 +142,6 @@ const styles = StyleSheet.create({
       textAlign: 'center'
    }
 });
+
+
 

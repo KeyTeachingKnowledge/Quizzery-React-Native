@@ -27,32 +27,36 @@ export default function Choices({A0, A1, A2, A3, correct,  correctAnswers }) {
       }
    };
 
-   const answerStyles = (choice, defaultStyle, selectStyle, traverseStyleCorrect, traverseStyleIncorrect) => { return (
+   const answerStyles = (choice, defaultStyle, selectStyle, traverseStyleCorrect, traverseStyleIncorrect, border=null) => { return (
     [defaultStyle, (selectedChoice == choice) && selectStyle,
       ((selectedChoices[shownQuestion] == choice) && isTraversing &&
-       ((choice == correctAnswers[shownQuestion])? traverseStyleCorrect: traverseStyleIncorrect))]);}
+       ((choice == correctAnswers[shownQuestion])? traverseStyleCorrect: traverseStyleIncorrect)),
+       isTraversing &&
+       ((choice == correctAnswers[shownQuestion])? border:null)
+
+      ]);}
 
    return (
-      <ScrollView style={styles.answersContainer}>
-      <Pressable style={answerStyles(1, [styles.answer, { borderColor: colors.border, }], [styles.selectedAnswer, { backgroundColor: colors.light,}], styles.selectedAnswerCorrect, styles.selectedAnswerIncorrect)} onPressIn={()=>setChoiceHandler(1)}>
+      <ScrollView style={[styles.answersContainer]} >
+      <Pressable style={answerStyles(1, [styles.answer, { borderColor: colors.border, }], [styles.selectedAnswer, { backgroundColor: colors.light,}], styles.selectedAnswerCorrect, styles.selectedAnswerIncorrect, {borderColor: '#32c953', borderWidth: 3})} onPressIn={()=>setChoiceHandler(1)}>
         <View><Text style={answerStyles(1, [styles.letter, { color: colors.light}], [[styles.selectedLetter, { color: colors.dark,}], { color: colors.dark}], [styles.selectedLetterCorrection, { color: 'white'}], [styles.selectedLetterCorrection, { color: 'white'}])}>A</Text></View>
         <Text style={answerStyles(1, [styles.answerText, {color: colors.light,}], [styles.selectedAnswerText, { color: colors.dark,}], [styles.selectedAnswerTextCorrection, { color: 'white',}], [styles.selectedAnswerTextCorrection, { color: 'white',}])}>
           {A0}
         </Text>
       </Pressable>
-      <Pressable style={answerStyles(2, [styles.answer, { borderColor: colors.border, }], [styles.selectedAnswer, { backgroundColor: colors.light,}], styles.selectedAnswerCorrect, styles.selectedAnswerIncorrect)} onPressIn={()=>setChoiceHandler(2)}>
+      <Pressable style={answerStyles(2, [styles.answer, { borderColor: colors.border, }], [styles.selectedAnswer, { backgroundColor: colors.light,}], styles.selectedAnswerCorrect, styles.selectedAnswerIncorrect, {borderColor: '#32c953', borderWidth: 3})} onPressIn={()=>setChoiceHandler(2)}>
       <View><Text style={answerStyles(2, [styles.letter, { color: colors.light}], [[styles.selectedLetter, { color: colors.dark,}], { color: colors.dark}], [styles.selectedLetterCorrection, { color: 'white'}], [styles.selectedLetterCorrection, { color: 'white'}])}>B</Text></View>
         <Text style={answerStyles(2, [styles.answerText, {color: colors.light,}], [styles.selectedAnswerText, { color: colors.dark,}], [styles.selectedAnswerTextCorrection, { color: 'white',}], [styles.selectedAnswerTextCorrection, { color: 'white',}])}>
           {A1}
         </Text>
       </Pressable>
-      <Pressable style={answerStyles(3, [styles.answer, { borderColor: colors.border, }], [styles.selectedAnswer, { backgroundColor: colors.light,}], styles.selectedAnswerCorrect, styles.selectedAnswerIncorrect)} onPressIn={()=>setChoiceHandler(3)}>
+      <Pressable style={answerStyles(3, [styles.answer, { borderColor: colors.border, }], [styles.selectedAnswer, { backgroundColor: colors.light,}], styles.selectedAnswerCorrect, styles.selectedAnswerIncorrect, {borderColor: '#32c953', borderWidth: 3})} onPressIn={()=>setChoiceHandler(3)}>
       <View><Text style={answerStyles(3, [styles.letter, { color: colors.light}], [[styles.selectedLetter, { color: colors.dark,}], { color: colors.dark}], [styles.selectedLetterCorrection, { color: 'white'}], [styles.selectedLetterCorrection, { color: 'white'}])}>C</Text></View>
         <Text style={answerStyles(3, [styles.answerText, {color: colors.light,}], [styles.selectedAnswerText, { color: colors.dark,}], [styles.selectedAnswerTextCorrection, { color: 'white',}], [styles.selectedAnswerTextCorrection, { color: 'white',}])}>
           {A2}
         </Text>
       </Pressable>
-      <Pressable style={answerStyles(4, [styles.answer, { borderColor: colors.border, }], [styles.selectedAnswer, { backgroundColor: colors.light,}], styles.selectedAnswerCorrect, styles.selectedAnswerIncorrect)} onPressIn={()=>setChoiceHandler(4)}>
+      <Pressable style={answerStyles(4, [styles.answer, { borderColor: colors.border, }], [styles.selectedAnswer, { backgroundColor: colors.light,}], styles.selectedAnswerCorrect, styles.selectedAnswerIncorrect, {borderColor: '#32c953', borderWidth: 3})} onPressIn={()=>setChoiceHandler(4)}>
       <View><Text style={answerStyles(4, [styles.letter, { color: colors.light}], [[styles.selectedLetter, { color: colors.dark,}], { color: colors.dark}], [styles.selectedLetterCorrection, { color: 'white'}], [styles.selectedLetterCorrection, { color: 'white'}])}>D</Text></View>
         <Text style={answerStyles(4, [styles.answerText, {color: colors.light,}], [styles.selectedAnswerText, { color: colors.dark,}], [styles.selectedAnswerTextCorrection, { color: 'white',}], [styles.selectedAnswerTextCorrection, { color: 'white',}])}>
           {A3}
@@ -66,9 +70,8 @@ export default function Choices({A0, A1, A2, A3, correct,  correctAnswers }) {
 const styles = StyleSheet.create({
 
    answersContainer: {
-     marginHorizontal: 20,
-     maxWidth: '90%',
-     minWidth: '90%',
+     maxWidth: '93%',
+     minWidth: '93%',
    },
 
     letter: {
@@ -83,8 +86,8 @@ const styles = StyleSheet.create({
     },
   
    answer: {
-     maxwidth: '30%',
-     minWidth: '30%',
+     maxwidth: '100%',
+     minWidth: '100%',
      paddingVertical: 10,
      marginVertical: 10,
      backgroundColor: 'rgba(0,0,0,0)',
@@ -101,10 +104,12 @@ const styles = StyleSheet.create({
       
   },
    selectedAnswerCorrect: {
-      backgroundColor: '#32c953',   // green
+      backgroundColor: '#32c953',   
+      borderColor: '#029943',
    },
     selectedAnswerIncorrect: {
-      backgroundColor: '#c93232',   // red
+      backgroundColor: '#c93232',  
+      borderColor: '#993232',
     },
    answerText: {
     paddingHorizontal: 25,
